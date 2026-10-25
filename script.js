@@ -24,8 +24,8 @@ const translations = {
     educationTitle: "Education",
     educationCopy: "My academic journey and qualifications.",
 
-    researchTitle: "Research",
-    researchCopy: "Research interests and ongoing work.",
+    workTitle: "Work",
+    workCopy: "My professional experience and career highlights.",
 
     projectsTitle: "Projects",
     projectsCopy: "Software and creative projects.",
@@ -109,8 +109,8 @@ const translations = {
     educationTitle: "Formation",
     educationCopy: "Mon parcours universitaire et mes qualifications.",
 
-    researchTitle: "Recherche",
-    researchCopy: "Mes intérêts de recherche et mes travaux en cours.",
+    workTitle: "Expérience professionnelle",
+    workCopy: "Mon expérience professionnelle et mes réalisations de carrière.",
 
     projectsTitle: "Projets",
     projectsCopy: "Mes projets informatiques et créatifs.",

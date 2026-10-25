@@ -1,134 +1,541 @@
+
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ashfi's bilingual personal website and portfolio.">
+
+  <meta
+    name="description"
+    content="Ashfi's bilingual personal website and portfolio."
+  >
+
   <title>Ashfi Shah</title>
+
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div class="navy-top">
-      <header class="site-header container">
-        <a class="logo" href="#home" aria-label="Ashfi home">ASHFI<span>.</span>SHAH</a>
-        <nav aria-label="Main navigation">
-          <a href="#about" data-i18n="navAbout">About</a>
-          <a href="#work" data-i18n="navWork">Portfolio</a>
-          <a href="#contact" data-i18n="navContact">Contact</a>
-          <a href="#hobbies" data-i18n="navHobbies">Hobbies and Interests</a>
-        </nav>
-        <div class="language-switch" aria-label="Language / Langue">
-          <button type="button" data-lang="en" lang="en-GB" aria-pressed="true">EN</button>
-          <span aria-hidden="true">/</span>
-          <button type="button" data-lang="fr" lang="fr-CA" aria-pressed="false">FR</button>
-        </div>
-      </header>
-      <section id="home" class="hero container" aria-labelledby="hero-title">
-        <p class="eyebrow" data-i18n="welcome">WELCOME · BIENVENUE</p>
-        <h1 id="hero-title" data-i18n="heroTitle">Hello, I'm Ashfi.</h1>
-        <p class="subtitle" data-i18n="heroSubtitle">MSc Computing Student · Researcher · Developer</p>
-        <p class="hero-copy" data-i18n="heroCopy">Explore my academic journey, research, projects and professional experience.</p>
+
+  <!-- ==========================================
+       NAVIGATION AND HOMEPAGE INTRODUCTION
+       ========================================== -->
+
+  <div class="navy-top">
+
+    <header class="site-header container">
+
+      <a class="logo" href="#home" aria-label="Ashfi home">
+        ASHFI<span>.</span>SHAH
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#work" data-i18n="navWork">Portfolio</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <a href="#hobbies" data-i18n="navHobbies">
+          Hobbies and Interests
+        </a>
+      </nav>
+
+      <div class="language-switch" aria-label="Language / Langue">
+        <button
+          type="button"
+          data-lang="en"
+          lang="en-GB"
+          aria-pressed="true">
+          EN
+        </button>
+
+        <span aria-hidden="true">/</span>
+
+        <button
+          type="button"
+          data-lang="fr"
+          lang="fr-CA"
+          aria-pressed="false">
+          FR
+        </button>
+      </div>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section
+      id="home"
+      class="hero container"
+      aria-labelledby="hero-title">
+
+      <!-- LEFT: INTRODUCTION -->
+
+      <div class="hero-content">
+
+        <p class="eyebrow" data-i18n="welcome">
+          WELCOME · BIENVENUE
+        </p>
+
+        <h1 id="hero-title" data-i18n="heroTitle">
+          Hello, I'm Ashfi.
+        </h1>
+
+        <p class="subtitle" data-i18n="heroSubtitle">
+          MSc Computing Student, Queen’s University
+        </p>
+
+        <p class="hero-copy" data-i18n="heroCopy">
+          Explore my academic journey, research, projects and
+          professional experience.
+        </p>
+
         <div class="actions">
-          <a class="button primary" href="#work" data-i18n="portfolioButton">My Portfolio</a>
-          <a class="button outline" href="#about" data-i18n="aboutButton">About Me</a>
+
+          <a
+            class="button primary"
+            href="#work"
+            data-i18n="portfolioButton">
+            My Portfolio
+          </a>
+
+          <a
+            class="button outline"
+            href="assets/A.S. Resume.pdf"
+            download
+            data-i18n="downloadResume">
+            Download Résumé
+          </a>
+
         </div>
-      </section>
-    </div>
-    <main class="container">
-      <section id="about" class="content-section">
-        <h2 data-i18n="aboutTitle">About Me</h2>
-        <p data-i18n="aboutCopy">I'm a Computing master's student with interests in research, software development and the social applications of technology. This website brings together my academic and creative work.</p>
-      </section>
-      <section id="work" class="content-section">
-        <h2 data-i18n="workTitle">Explore My Work</h2>
-        <div class="cards">
-          <article class="card"><h3 data-i18n="educationTitle">Education</h3><p data-i18n="educationCopy">My academic journey and qualifications.</p></article>
-          <article class="card"><h3 data-i18n="researchTitle">Research</h3><p data-i18n="researchCopy">Research interests and ongoing work.</p></article>
-          <article class="card"><h3 data-i18n="projectsTitle">Projects</h3><p data-i18n="projectsCopy">Software and creative projects.</p></article>
-        </div>
-      </section>
-      <section id="contact" class="content-section">
-        <h2 data-i18n="contactTitle">Contact</h2>
-        <p data-i18n="contactCopy">Professional contact details and links will appear here.</p>
-      </section>
-    
-      <!-- buttons -->
-      <section id="hobbies" class="hobbies-section">
-        <div class="container">
-          <h2 data-i18n="hobbiesTitle">My Hobbies & Interests</h2>
-          <div class="section-underline"></div>
 
-          <div class="hobbies-grid">
+      
+      <p class="eyebrow" data-i18n="timetitle">
+          <br><br>CURRENT TIME
+        </p>
 
-            <a href="interests.html#technology" class="hobby-card">
-              <i data-lucide="cpu"></i>
-              <span data-i18n="hobbyTechnology">Technology</span>
-            </a>
+      <!-- LIVE DIGITAL CLOCKS -->
+      <div class="clocks-container">
 
-            <a href="interests.html#hardware" class="hobby-card">
-              <i data-lucide="pc-case"></i>
-              <span data-i18n="hobbyHardware">Computer Hardware</span>
-            </a>
-
-            <a href="interests.html#gaming" class="hobby-card">
-              <i data-lucide="gamepad-2"></i>
-              <span data-i18n="hobbyGaming">Gaming</span>
-            </a>
-
-            <a href="interests.html#transportation" class="hobby-card">
-              <i data-lucide="train-front"></i>
-              <span data-i18n="hobbyTransportation">Transportation</span>
-            </a>
-
-            <a href="interests.html#architecture" class="hobby-card">
-              <i data-lucide="landmark"></i>
-              <span data-i18n="hobbyArchitecture">Architecture</span>
-            </a>
-
-            <a href="interests.html#urban-design" class="hobby-card">
-              <i data-lucide="building-2"></i>
-              <span data-i18n="hobbyUrban">Urban Design</span>
-            </a>
-
-            <a href="interests.html#history" class="hobby-card">
-              <i data-lucide="scroll-text"></i>
-              <span data-i18n="hobbyHistory">History</span>
-            </a>
-
-            <a href="interests.html#geography" class="hobby-card">
-              <i data-lucide="globe-2"></i>
-              <span data-i18n="hobbyGeography">Geography</span>
-            </a>
-
-            <a href="interests.html#cycling" class="hobby-card">
-              <i data-lucide="bike"></i>
-              <span data-i18n="hobbyCycling">Cycling</span>
-            </a>
-
-            <a href="interests.html#music" class="hobby-card">
-              <i data-lucide="music-2"></i>
-              <span data-i18n="hobbyMusic">Music</span>
-            </a>
-
+        <!-- WINNIPEG -->
+        <div class="site-clock" aria-label="Current time in Winnipeg">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockWinnipeg" class="clock-time">--:--:--</span>
+            <span class="clock-location"><br><br>WINNIPEG · MB</span>
           </div>
         </div>
-      </section>
 
-    </main>
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>
-          <strong>This website was proudly developed in Canada.</strong><br>
-          This website was programmed using HTML, CSS and JavaScript.
-          Code was generated with the assistance of generative AI models
-          such as OpenAI's ChatGPT 6. All source code is available on GitHub.
-        </p>
+        <!-- TORONTO -->
+        <div class="site-clock" aria-label="Current time in Toronto">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockToronto" class="clock-time">--:--:--</span>
+            <span class="clock-location">THUNDER BAY · ON<br>TORONTO · ON<br>KINGSTON · ON</span>
+          </div>
+        </div>
+
+        <!-- GMT -->
+        <div class="site-clock" aria-label="Current GMT time">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockGMT" class="clock-time">--:--:--</span>
+            <span class="clock-location">LONDON · UK<br>(Winter/L'Hiver)<br>GMT · UTC+0</span>
+          </div>
+        </div>
+
       </div>
-    </footer>
+
+      </div>
+
+      <!-- RIGHT: PROFILE PHOTOGRAPH -->
+
+      <div class="hero-photo">
+
+        <img
+          src="assets/A.S. Photo Main.jpeg"
+          alt="Portrait of Ashfi Shah"
+          class="profile-photo"
+          width="300"
+          height="360"
+        >
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ==========================================
+       MAIN CONTENT
+       ========================================== -->
+
+  <main class="container">
+
+    <!-- ABOUT ME -->
+
+    <section id="about" class="content-section">
+
+      <h2 data-i18n="aboutTitle">
+        About Me
+      </h2>
+
+      <p data-i18n="aboutCopy"></p>
+
+    </section>
+
+
+    <!-- PORTFOLIO -->
+
+    <section id="work" class="content-section">
+
+      <h2 data-i18n="workTitle">
+        Explore My Work
+      </h2>
+
+      
+      
+    <div class="cards">
+
+      <a href="portfolio.html#education" class="card portfolio-link">
+        <h3 data-i18n="educationTitle">Education</h3>
+        <p data-i18n="educationCopy">My academic journey and qualifications.</p>
+      </a>
+
+      <a href="portfolio.html#research" class="card portfolio-link">
+        <h3 data-i18n="researchTitle">Research</h3>
+        <p data-i18n="researchCopy">Research interests and ongoing work.</p>
+      </a>
+
+      <a href="portfolio.html#projects" class="card portfolio-link">
+        <h3 data-i18n="projectsTitle">Projects</h3>
+        <p data-i18n="projectsCopy">Software and creative projects.</p>
+      </a>
+
+      <a href="portfolio.html#skills" class="card portfolio-link">
+        <h3 data-i18n="skillsTitle">Skills</h3>
+        <p data-i18n="skillsCopy">Technical and professional competencies.</p>
+      </a>
+
+      <a href="portfolio.html#certificates" class="card portfolio-link">
+        <h3 data-i18n="certificatesTitle">Licences / Certificates</h3>
+        <p data-i18n="certificatesCopy">Professional licences and certifications.</p>
+      </a>
+
+      <a href="portfolio.html#awards" class="card portfolio-link">
+        <h3 data-i18n="awardsTitle">Awards</h3>
+        <p data-i18n="awardsCopy">Honours, distinctions and achievements.</p>
+      </a>
+
+      <a href="portfolio.html#volunteering" class="card portfolio-link">
+        <h3 data-i18n="volunteeringTitle">Volunteering</h3>
+        <p data-i18n="volunteeringCopy">Community involvement and contributions.</p>
+      </a>
+
+      <a href="portfolio.html#publications" class="card portfolio-link">
+        <h3 data-i18n="publicationsTitle">Publications</h3>
+        <p data-i18n="publicationsCopy">Academic publications and scholarly writing.</p>
+      </a>
+
+      <a href="portfolio.html#languages" class="card portfolio-link">
+        <h3 data-i18n="languagesTitle">Languages</h3>
+        <p data-i18n="languagesCopy">Proficiency in various languages.</p>
+      </a>
+
+    </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         HOBBIES AND INTERESTS
+         ========================================== -->
+
+    <section id="hobbies" class="hobbies-section">
+
+      <div class="container">
+
+        <h2 data-i18n="hobbiesTitle">
+          My Hobbies &amp; Interests
+        </h2>
+
+        <div class="section-underline"></div>
+
+        <div class="hobbies-grid">
+
+          <!-- TECHNOLOGY -->
+
+          <a href="interests.html#technology" class="hobby-card">
+            <i data-lucide="cpu"></i>
+            <span data-i18n="hobbyTechnology">
+              Technology
+            </span>
+          </a>
+
+
+          <!-- COMPUTER HARDWARE -->
+
+          <a href="interests.html#hardware" class="hobby-card">
+            <i data-lucide="pc-case"></i>
+            <span data-i18n="hobbyHardware">
+              Computer Hardware
+            </span>
+          </a>
+
+
+          <!-- GAMING -->
+
+          <a href="interests.html#gaming" class="hobby-card">
+            <i data-lucide="gamepad-2"></i>
+            <span data-i18n="hobbyGaming">
+              Gaming
+            </span>
+          </a>
+
+
+          <!-- TRANSPORTATION -->
+
+          <a href="interests.html#transportation" class="hobby-card">
+            <i data-lucide="train-front"></i>
+            <span data-i18n="hobbyTransportation">
+              Transportation
+            </span>
+          </a>
+
+
+          <!-- ARCHITECTURE -->
+
+          <a href="interests.html#architecture" class="hobby-card">
+            <i data-lucide="landmark"></i>
+            <span data-i18n="hobbyArchitecture">
+              Architecture
+            </span>
+          </a>
+
+
+          <!-- URBAN DESIGN -->
+
+          <a href="interests.html#urban-design" class="hobby-card">
+            <i data-lucide="building-2"></i>
+            <span data-i18n="hobbyUrban">
+              Urban Design
+            </span>
+          </a>
+
+
+          <!-- HISTORY -->
+
+          <a href="interests.html#history" class="hobby-card">
+            <i data-lucide="scroll-text"></i>
+            <span data-i18n="hobbyHistory">
+              History
+            </span>
+          </a>
+
+
+          <!-- GEOGRAPHY -->
+
+          <a href="interests.html#geography" class="hobby-card">
+            <i data-lucide="globe-2"></i>
+            <span data-i18n="hobbyGeography">
+              Geography
+            </span>
+          </a>
+
+
+          <!-- CYCLING -->
+
+          <a href="interests.html#cycling" class="hobby-card">
+            <i data-lucide="bike"></i>
+            <span data-i18n="hobbyCycling">
+              Cycling
+            </span>
+          </a>
+
+
+          <!-- MUSIC -->
+
+          <a href="interests.html#music" class="hobby-card">
+            <i data-lucide="music-2"></i>
+            <span data-i18n="hobbyMusic">
+              Music
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="content-section">
+
+     
+<!-- CONTACT SECTION -->
+
+<section id="contact" class="content-section">
+
+  <h2 data-i18n="contactTitle">Contact</h2>
+
+  <p data-i18n="contactCopy">
+    Feel free to get in touch or connect with me.
+  </p>
+
+  <div class="contact-links">
+
+    <!-- PERSONAL EMAIL -->
+    <a href="mailto:Ashfishah50@gmail.com" class="contact-link">
+      <i data-lucide="mail" aria-hidden="true"></i>
+      <span data-i18n="contactPersonalEmail">
+        Email – Personal
+      </span>
+    </a>
+
+    <!-- QUEEN'S EMAIL -->
+    <a href="mailto:25rrym@queensu.ca" class="contact-link">
+      <i data-lucide="graduation-cap" aria-hidden="true"></i>
+      <span data-i18n="contactQueensEmail">
+        Email – Queen's University
+      </span>
+    </a>
+
+    <!-- PHONE NUMBER -->
+   <a href="tel:+18073564192" class="contact-link">
+      <i data-lucide="phone" aria-hidden="true"></i>
+      <span data-i18n="contactPhone">Phone Number</span>
+    </a>
+    
+    <!-- ADDRESS -->
+    <button
+      type="button"
+      class="contact-link"
+      id="addressButton"
+      onclick="document.getElementById('addressPopup').showModal()">
+      <i data-lucide="map-pin" aria-hidden="true"></i>
+      <span data-i18n="contactAddress">Postal Address</span>
+    </button>
+
+    <!-- LINKEDIN -->
+    <a href="https://www.linkedin.com/in/ashfi-shah-9a5542327/"
+       class="contact-link"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i data-lucide="linkedin" aria-hidden="true"></i>
+      <span>LinkedIn</span>
+    </a>
+
+    <!-- ORCID -->
+    <a href="https://orcid.org/0009-0005-6072-6350"
+       class="contact-link"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i data-lucide="book-open" aria-hidden="true"></i>
+      <span>ORCID</span>
+    </a>
+
+    <!-- GITHUB -->
+    <a href="https://github.com/Ashfi-Shah"
+       class="contact-link"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i data-lucide="github" aria-hidden="true"></i>
+      <span>GitHub</span>
+    </a>
+
+    <!-- DISCORD -->
+    <a href="https://discordapp.com/users/366405067789565952"
+       class="contact-link"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i data-lucide="message-circle" aria-hidden="true"></i>
+      <span>Discord</span>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/ashfi.shah/"
+       class="contact-link"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i data-lucide="instagram" aria-hidden="true"></i>
+      <span>Instagram</span>
+    </a>
+
+    <!-- FACEBOOK -->
+    <a href="https://www.facebook.com/ashfi.h.m.shah/"
+       class="contact-link"
+       target="_blank"
+       rel="noopener noreferrer">
+      <i data-lucide="facebook" aria-hidden="true"></i>
+      <span>Facebook</span>
+    </a>
+
+  </div>
+
+  
+  <!-- ADDRESS POP-UP -->
+  <dialog id="addressPopup" class="address-popup">
+    
+    <button
+      type="button"
+      class="popup-close"
+      id="closeAddress"
+      aria-label="Close"
+      onclick="document.getElementById('addressPopup').close()">
+      &times;
+    </button>
+
+    <h3 data-i18n="contactAddress">Postal Address</h3>
+    <p>165A Colborne Street,<br>Kingston, ON K7K 1E1</p>
+  </dialog>
+
+</section>
+
+
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        <strong>
+          This website was proudly developed in Canada.
+        </strong>
+
+        <br>
+
+        This website was programmed using HTML, CSS and JavaScript.
+        Code was generated with the assistance of generative AI models
+        such as OpenAI's ChatGPT 6.
+        All source code is available on GitHub.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- ==========================================
+       LUCIDE ICONS
+       ========================================== -->
+
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+
   <script>
-    lucide.createIcons();
+    if (window.lucide) {
+      lucide.createIcons();
+    }
   </script>
+
 </body>
 </html>

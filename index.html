@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ashfi's bilingual personal website and portfolio.">
+  <title>Ashfi Shah</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navy-top">
+      <header class="site-header container">
+        <a class="logo" href="#home" aria-label="Ashfi home">ASHFI<span>.</span>SHAH</a>
+        <nav aria-label="Main navigation">
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#work" data-i18n="navWork">Portfolio</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+          <a href="#hobbies" data-i18n="navHobbies">Hobbies and Interests</a>
+        </nav>
+        <div class="language-switch" aria-label="Language / Langue">
+          <button type="button" data-lang="en" lang="en-GB" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-lang="fr" lang="fr-CA" aria-pressed="false">FR</button>
+        </div>
+      </header>
+      <section id="home" class="hero container" aria-labelledby="hero-title">
+        <p class="eyebrow" data-i18n="welcome">WELCOME · BIENVENUE</p>
+        <h1 id="hero-title" data-i18n="heroTitle">Hello, I'm Ashfi.</h1>
+        <p class="subtitle" data-i18n="heroSubtitle">MSc Computing Student · Researcher · Developer</p>
+        <p class="hero-copy" data-i18n="heroCopy">Explore my academic journey, research, projects and professional experience.</p>
+        <div class="actions">
+          <a class="button primary" href="#work" data-i18n="portfolioButton">My Portfolio</a>
+          <a class="button outline" href="#about" data-i18n="aboutButton">About Me</a>
+        </div>
+      </section>
+    </div>
+    <main class="container">
+      <section id="about" class="content-section">
+        <h2 data-i18n="aboutTitle">About Me</h2>
+        <p data-i18n="aboutCopy">I'm a Computing master's student with interests in research, software development and the social applications of technology. This website brings together my academic and creative work.</p>
+      </section>
+      <section id="work" class="content-section">
+        <h2 data-i18n="workTitle">Explore My Work</h2>
+        <div class="cards">
+          <article class="card"><h3 data-i18n="educationTitle">Education</h3><p data-i18n="educationCopy">My academic journey and qualifications.</p></article>
+          <article class="card"><h3 data-i18n="researchTitle">Research</h3><p data-i18n="researchCopy">Research interests and ongoing work.</p></article>
+          <article class="card"><h3 data-i18n="projectsTitle">Projects</h3><p data-i18n="projectsCopy">Software and creative projects.</p></article>
+        </div>
+      </section>
+      <section id="contact" class="content-section">
+        <h2 data-i18n="contactTitle">Contact</h2>
+        <p data-i18n="contactCopy">Professional contact details and links will appear here.</p>
+      </section>
+    
+      <!-- buttons -->
+      <section id="hobbies" class="hobbies-section">
+        <div class="container">
+          <h2 data-i18n="hobbiesTitle">My Hobbies & Interests</h2>
+          <div class="section-underline"></div>
+
+          <div class="hobbies-grid">
+
+            <a href="interests.html#technology" class="hobby-card">
+              <i data-lucide="cpu"></i>
+              <span data-i18n="hobbyTechnology">Technology</span>
+            </a>
+
+            <a href="interests.html#hardware" class="hobby-card">
+              <i data-lucide="pc-case"></i>
+              <span data-i18n="hobbyHardware">Computer Hardware</span>
+            </a>
+
+            <a href="interests.html#gaming" class="hobby-card">
+              <i data-lucide="gamepad-2"></i>
+              <span data-i18n="hobbyGaming">Gaming</span>
+            </a>
+
+            <a href="interests.html#transportation" class="hobby-card">
+              <i data-lucide="train-front"></i>
+              <span data-i18n="hobbyTransportation">Transportation</span>
+            </a>
+
+            <a href="interests.html#architecture" class="hobby-card">
+              <i data-lucide="landmark"></i>
+              <span data-i18n="hobbyArchitecture">Architecture</span>
+            </a>
+
+            <a href="interests.html#urban-design" class="hobby-card">
+              <i data-lucide="building-2"></i>
+              <span data-i18n="hobbyUrban">Urban Design</span>
+            </a>
+
+            <a href="interests.html#history" class="hobby-card">
+              <i data-lucide="scroll-text"></i>
+              <span data-i18n="hobbyHistory">History</span>
+            </a>
+
+            <a href="interests.html#geography" class="hobby-card">
+              <i data-lucide="globe-2"></i>
+              <span data-i18n="hobbyGeography">Geography</span>
+            </a>
+
+            <a href="interests.html#cycling" class="hobby-card">
+              <i data-lucide="bike"></i>
+              <span data-i18n="hobbyCycling">Cycling</span>
+            </a>
+
+            <a href="interests.html#music" class="hobby-card">
+              <i data-lucide="music-2"></i>
+              <span data-i18n="hobbyMusic">Music</span>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          <strong>This website was proudly developed in Canada.</strong><br>
+          This website was programmed using HTML, CSS and JavaScript.
+          Code was generated with the assistance of generative AI models
+          such as OpenAI's ChatGPT 6. All source code is available on GitHub.
+        </p>
+      </div>
+    </footer>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,404 @@
+:root{--navy:#142B50;--red:#C8102E;--white:#fff;--ink:#26354b;--muted:#526078;--line:#e5eaf0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);line-height:1.65;background:var(--white)}.container{width:min(1100px,calc(100% - 40px));margin-inline:auto}.navy-top,.site-footer{background:var(--navy);color:var(--white)}.site-header{display:flex;align-items:center;gap:30px;justify-content:space-between;padding-block:23px;border-bottom:1px solid #ffffff25}.logo{font-size:1.6rem;letter-spacing:.06em;font-weight:800;color:white;text-decoration:none}.logo span{color:#fa7186}nav{display:flex;gap:24px}nav a{color:white;text-decoration:none;font-size:.95rem}nav a:hover,nav a:focus-visible{text-decoration:underline}.language-switch{display:flex;gap:8px;align-items:center}.language-switch button{border:0;background:transparent;color:#cbd6e7;font:inherit;cursor:pointer;padding:5px}.language-switch button[aria-pressed="true"]{color:white;font-weight:800;text-decoration:underline;text-decoration-color:#fa7186;text-underline-offset:5px}.hero{padding-block:100px 115px}.eyebrow{color:#ff91a1;font-weight:700;font-size:.85rem;letter-spacing:.12em}.hero h1{font-size:clamp(2.6rem,6vw,4.7rem);line-height:1.15;margin:18px 0}.subtitle{font-size:1.2rem;color:#e4ebf5}.hero-copy{color:#d4e0ef;max-width:640px}.actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.button{display:inline-block;border-radius:6px;padding:11px 21px;text-decoration:none;font-weight:650}.primary{background:var(--red);color:white}.outline{border:1px solid white;color:white}.button:hover{filter:brightness(1.12)}.content-section{padding-block:58px;border-bottom:1px solid var(--line)}.content-section:last-child{border:0;padding-bottom:85px}h2{font-size:1.9rem;color:var(--navy);line-height:1.2;margin:0 0 23px}h2:after{content:"";display:block;width:48px;height:4px;background:var(--red);border-radius:2px;margin-top:14px}.content-section>p{max-width:800px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{padding:25px;background:#f5f7fa;border-radius:9px;border:1px solid #edf0f4}.card h3{margin:0 0 9px;color:var(--navy)}.card p{margin:0;color:var(--muted)}.site-footer{padding-block:28px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.87rem}.footer-inner p{margin:0}@media(max-width:700px){.site-header{flex-wrap:wrap;gap:15px}.site-header nav{order:3;width:100%;gap:20px;flex-wrap:wrap}.hero{padding-block:65px 80px}.cards{grid-template-columns:1fr}.content-section{padding-block:45px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* ==========================================
+   HOBBIES & INTERESTS
+   ========================================== */
+
+.hobbies-section {
+  background: #ffffff;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hobbies-section h2 {
+  color: #142B50;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section-underline {
+  width: 55px;
+  height: 4px;
+  background: #C8102E;
+  margin: 0 auto 35px;
+  border-radius: 3px;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hobby-card {
+  background: #f5f7fa;
+  border: 1px solid #e1e6ed;
+  border-radius: 12px;
+  padding: 25px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+.hobby-card svg {
+  width: 34px;
+  height: 34px;
+  color: #142B50;
+  stroke-width: 1.8;
+}
+
+.hobby-card span {
+  color: #142B50;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+  border-color: #C8102E;
+  box-shadow: 0 8px 20px rgba(20, 43, 80, 0.12);
+}
+
+.hobby-card:hover svg {
+  color: #C8102E;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .hobby-card {
+    padding: 20px 8px;
+  }
+}
+
+.hobby-card {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hobby-card:focus-visible {
+  outline: 3px solid #C8102E;
+  outline-offset: 3px;
+}
+
+
+/* ==========================================
+   INTERESTS PAGE — NAVY HEADER
+   ========================================== */
+
+.interests-header {
+  background-color: #142B50;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+/* Navigation bar */
+.interests-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Website name */
+.interests-brand {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.interests-brand span {
+  color: #FF8191;
+}
+
+/* Navigation links */
+.interests-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.interests-nav-actions a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.interests-nav-actions a:hover {
+  color: #FF8191;
+}
+
+/* Language switcher */
+.language-toggle {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  padding: 9px 15px;
+  cursor: pointer;
+}
+
+.language-toggle:hover {
+  background: #C8102E;
+  border-color: #C8102E;
+}
+
+/* Introduction area */
+.interests-intro {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 75px 20px 90px;
+}
+
+.interests-intro h1 {
+  color: #FFFFFF;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 15px;
+}
+
+.interests-intro p {
+  color: #DCE5F1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 550px) {
+  .interests-nav {
+    flex-wrap: wrap;
+  }
+
+  .interests-intro {
+    padding: 50px 20px 65px;
+  }
+}
+
+/* ==========================================
+   INTERESTS PAGE — CONTENT ALIGNMENT
+   ========================================== */
+
+.interests-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px 80px;
+  box-sizing: border-box;
+}
+
+.interest-detail {
+  padding: 45px 0;
+  border-bottom: 1px solid #e1e6ed;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .interests-content {
+    padding: 30px 20px 60px;
+  }
+}
+
+
+/* ==========================================
+   MUSIC SECTION
+   ========================================== */
+
+.music-section h3 {
+  color: #142B50;
+  font-size: 1.5rem;
+  margin: 45px 0 22px;
+}
+
+.music-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.music-feature-card {
+  background: #142B50;
+  color: #FFFFFF;
+  padding: 28px;
+  border-radius: 12px;
+  border-top: 4px solid #C8102E;
+}
+
+.music-feature-label {
+  display: block;
+  color: #DCE5F1;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+}
+
+.music-feature-card h4 {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+  color: #FFFFFF;
+}
+
+.music-feature-card p {
+  color: #DCE5F1;
+  margin: 0;
+}
+
+/* Annual music timeline */
+
+.music-timeline {
+  border-left: 3px solid #142B50;
+  margin-left: 20px;
+}
+
+.music-year {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 18px;
+  padding: 15px 20px 25px 30px;
+}
+
+.music-year::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 22px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #C8102E;
+  border: 2px solid #FFFFFF;
+}
+
+.music-year-number {
+  color: #142B50;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.music-year strong {
+  color: #142B50;
+}
+
+.music-year p {
+  margin: 5px 0 0;
+  color: #52627A;
+}
+
+.music-year-upcoming {
+  background: #F5F7FA;
+  border-radius: 0 10px 10px 0;
+}
+
+.music-tie {
+  display: block;
+  color: #C8102E;
+  font-size: 0.85rem;
+  margin: 12px 0;
+}
+
+.music-honourable {
+  background: #F5F7FA;
+  border-left: 4px solid #C8102E;
+  padding: 20px 25px;
+  border-radius: 0 8px 8px 0;
+}
+
+.music-honourable strong {
+  color: #142B50;
+}
+
+.music-honourable p {
+  margin: 5px 0 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .music-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .music-year {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 10px;
+    padding-left: 20px;
+  }
+}
+
+/* ==========================================
+   SPOTIFY SONG LINKS
+   ========================================== */
+
+.music-song-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #142B50;
+  font-weight: 700;
+  text-decoration: none;
+
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.music-song-link:hover {
+  color: #C8102E;
+  border-bottom-color: #C8102E;
+}
+
+.music-song-link:focus-visible {
+  outline: 2px solid #C8102E;
+  outline-offset: 4px;
+}
+
+.music-song-link svg {
+  width: 15px;
+  height: 15px;
+}
+
+.music-feature-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.music-feature-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(20, 43, 80, 0.2);
+}
+
+.music-feature-link:focus-visible {
+  outline: 3px solid #C8102E;
+  outline-offset: 4px;
+}
+
+.music-spotify-label {
+  display: inline-block;
+  margin-top: 20px;
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 600;
+}

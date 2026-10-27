@@ -1,0 +1,95 @@
+:root{--navy:#0b2055;--red:#e21f2b;--ink:#17223a;--muted:#55647b;--line:#dbe3ed;--pale:#f4f7fb;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--pale);line-height:1.6}a{color:inherit}.site-header{background:var(--navy);color:#fff}.header-inner{max-width:1160px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}.brand{text-decoration:none;font-weight:800;letter-spacing:.12em;font-size:1.12rem}.site-header nav{display:flex;flex-wrap:wrap;gap:20px}.site-header nav a{text-decoration:none;font-size:.92rem}.site-header nav a:hover,.site-header nav a[aria-current]{text-decoration:underline;text-decoration-color:#ff6470;text-underline-offset:6px}.language-switch{display:flex;border:1px solid #ffffff80;border-radius:9px;overflow:hidden}.language-switch button{background:transparent;color:white;border:0;padding:7px 12px;cursor:pointer;font-weight:700}.language-switch button[aria-pressed=true]{background:white;color:var(--navy)}.travel-content{max-width:1160px;margin:auto;padding:0 24px 70px}.hero{text-align:center;padding:70px 18px 42px}.eyebrow{color:var(--red);font-weight:800;letter-spacing:.18em;font-size:.76rem}.hero h1{font-size:clamp(2.3rem,5vw,4rem);line-height:1.15;color:var(--navy);margin:10px 0 18px}.hero>p:last-child{max-width:700px;margin:auto;color:var(--muted);font-size:1.08rem}.travel-nav{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:0 0 54px}.travel-nav a{padding:10px 16px;border:1px solid var(--line);border-radius:30px;background:white;text-decoration:none;color:var(--navy);font-weight:700;font-size:.9rem}.travel-nav a:hover{border-color:var(--red);color:var(--red)}.travel-section{scroll-margin-top:24px;margin-bottom:72px}.section-heading{display:flex;gap:18px;align-items:flex-start;margin-bottom:25px}.section-number{font-weight:800;color:var(--red);font-size:1.3rem;padding-top:5px}.section-heading h2{font-size:clamp(1.55rem,3vw,2.1rem);color:var(--navy);margin:0}.section-heading p{margin:3px 0 0;color:var(--muted)}.country-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}.country-card{background:white;border:1px solid var(--line);border-radius:15px;box-shadow:0 6px 22px #0b20550b;overflow:hidden}.country-card>summary{cursor:pointer;padding:19px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none;font-size:1.05rem;font-weight:800;color:var(--navy)}.country-card>summary::-webkit-details-marker,.region>summary::-webkit-details-marker{display:none}.country-card>summary::after,.region>summary::after{content:'+';font-size:1.35rem;color:var(--red);line-height:1}.country-card[open]>summary::after,.region[open]>summary::after{content:'−'}.country-card[open]>summary{border-bottom:1px solid var(--line)}.country-body{padding:15px 20px 20px}.region{border-bottom:1px solid #edf0f4;padding:8px 0}.region:last-child{border-bottom:0}.region>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-weight:700;padding:5px 0}.city-list{list-style:none;padding:5px 0 4px 16px;margin:0;display:grid;gap:7px}.city-list li{padding-left:15px;position:relative;color:var(--muted)}.city-list li::before{content:'';position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--red)}.country-only{color:var(--muted);margin:0}.note{font-size:.93rem;color:var(--muted);margin:20px 0 0}.map-figure{margin:0;background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden}.map-figure img{display:block;width:100%;height:auto}.map-figure figcaption{padding:12px 18px;font-size:.88rem;color:var(--muted);border-top:1px solid var(--line)}.site-footer{background:var(--navy);color:white;padding:23px 24px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:.9rem}@media(max-width:700px){.country-grid{grid-template-columns:1fr}.header-inner{justify-content:center}.site-header nav{justify-content:center}.hero{padding-top:48px}.travel-section{margin-bottom:54px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+
+/* Travel international wishlist: grouped by region, plain non-expandable tiles */
+#wishlist-list .travel-continent-group { grid-column: 1 / -1; width: 100%; margin-top: 1.5rem; }
+#wishlist-list .travel-continent-heading { margin: 0 0 0.8rem; font-size: 1.1rem; color: #142a4d; }
+#wishlist-list .travel-country-tile-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 0.7rem; }
+#wishlist-list .travel-country-tile { padding: 0.85rem 1rem; border: 1px solid #d9e0ea; border-radius: 10px; background: #fff; color: #142a4d; font-weight: 600; }
+@media (max-width: 480px) { #wishlist-list .travel-country-tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } #wishlist-list .travel-country-tile { font-size: 0.9rem; padding: 0.7rem; } }
+
+/* Consistent flag images across Windows, macOS, and mobile */
+.travel-flag { display: inline-flex; width: 28px; height: 21px; flex: 0 0 28px; align-items: center; justify-content: center; vertical-align: middle; margin-right: 0.6rem; }
+.travel-flag-image { display: block; width: 28px; height: 21px; object-fit: cover; border-radius: 2px; }
+.travel-country-tile { display: flex; align-items: center; }
+.country-card > summary .travel-flag { vertical-align: middle; }
+
+.region-static {
+  cursor: default;
+  list-style: none;
+}
+
+.region-static::before,
+.region-static::after {
+  content: none !important;
+}
+
+
+/* Travel maps */
+.travel-maps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.travel-maps img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+/* Language switch — match the homepage */
+.interests-header .language-switch {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+.interests-header .language-switch button {
+  appearance: none;
+  background: transparent !important;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  padding: 5px 0;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.interests-header .language-switch button[aria-pressed="true"] {
+  background: transparent !important;
+  color: #ffffff;
+  font-weight: 700;
+  border-bottom-color: #e63946;
+}
+
+.interests-header .language-switch span {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+/* Single underline for the active language */
+.interests-header .language-switch button {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  position: relative;
+}
+
+.interests-header .language-switch button::after {
+  content: none !important;
+}
+
+.interests-header .language-switch button[aria-pressed="true"] {
+  border-bottom: 2px solid #e63946 !important;
+}

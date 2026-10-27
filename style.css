@@ -1565,3 +1565,62 @@ button.contact-link {
   }
 }
 
+/* Interests: navy-and-red illustration grid */
+.interest-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+.interest-card {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 180px;
+  padding: 24px 16px;
+  background: #f3f5f9;
+  border: 1px solid #d7dfea;
+  border-bottom: 4px solid #b32636;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+.interest-card-icon {
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e5ebf4;
+  color: #142d52;
+}
+.interest-card-icon svg { width: 46px; height: 46px; }
+.interest-card-icon .accent { stroke: #b32636; }
+.interest-card h3 { margin: 0; color: #142d52; font-size: 1.05rem; font-weight: 600; }
+@media (max-width: 800px) {
+  .interest-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 480px) {
+  .interest-card-grid { grid-template-columns: 1fr; }
+}
+  
+/* Expandable interest captions */
+.interest-card { justify-content: flex-start; }
+.interest-card-details { width: 100%; margin-top: auto; }
+.interest-card-details summary { color: #142d52; font-weight: 600; cursor: pointer; padding: 8px; }
+.interest-card-details summary:hover { color: #b32636; }
+.interest-card-details summary:focus-visible { outline: 2px solid #b32636; outline-offset: 3px; }
+.interest-card-caption { margin-top: 12px; color: #44546a; text-align: left; font-size: .92rem; line-height: 1.6; overflow-wrap: anywhere; }
+.interest-card-caption p { margin: 0 0 12px; }
+.interest-card-caption ul { padding-left: 20px; margin: 0 0 12px; }
+.interest-card-caption li { margin-bottom: 9px; }
+
+/* Consistent appearance for all provinces and states */
+.country-body .region > summary,
+.country-body .region-static {
+  font-weight: 600;
+}

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -7,6 +6,7 @@
   <meta name="description" content="Ashfi's bilingual personal website and portfolio.">
   <title>Ashfi Shah | Hobbies and Interests</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="travel.css">
 </head>
 <body>
 
@@ -30,71 +30,105 @@
     </div>
   </header>
 
-
-
   <main class="interests-content">
-
-    <section id="technology" class="interest-detail">
-      <h2 data-i18n="hobbyTechnology">Technology</h2>
-      <p data-i18n="technologyDescription">
-        My interest in technology includes personal devices,
-        smart-home development and computing projects.
-      </p>
+    <!-- INTERESTS: SIX ILLUSTRATED CARDS -->
+    <section class="interest-detail interests-grid-section" id="interests">
+    <h2 data-i18n="interestsGridHeading">My Interests</h2>
+    <div class="interest-card-grid">
+    <div class="interest-card">
+    <div aria-hidden="true" class="interest-card-icon">
+    <svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+    <rect height="12" rx="2" width="16" x="4" y="5"></rect><path d="M8 21h8M12 17v4"></path><rect class="accent" height="6" rx="1" width="6" x="9" y="8"></rect>
+    </svg>
+    </div>
+    <h3 data-i18n="interestTechnologyHardware">Technology &amp; Hardware</h3>
+    <details class="interest-card-details"><summary data-i18n="interestReadMore">Read more</summary><div class="interest-card-caption" data-caption="technologyHardware"><p>I have always been fascinated by technology, both software and hardware. I enjoy collecting gadgets, particularly devices that work together within an interconnected ecosystem, and keeping up with the latest innovations. At the same time, I have a soft spot for older technology and believe in reducing electronic waste wherever possible. This has inspired me to repair three computers and build two from scratch.</p><p>I have experience with Windows XP through Windows 11 and am continuing to explore macOS and Linux. I also enjoy collecting Apple devices, including my iPhone 13, which holds special significance because of my fond memories of 2021.</p></div></details></div>
+    <div class="interest-card">
+    <div aria-hidden="true" class="interest-card-icon">
+    <svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+    <rect height="16" rx="3" width="12" x="6" y="3"></rect><path d="M6 10h12M9 15h.01M15 15h.01M8 19l-2 3M16 19l2 3"></path><path class="accent" d="M9 6h6"></path>
+    </svg>
+    </div>
+    <h3 data-i18n="hobbyTransportation">Transportation</h3>
+    <details class="interest-card-details"><summary data-i18n="interestReadMore">Read more</summary><div class="interest-card-caption" data-caption="transportation"><p>Transportation is one of my more unusual passions. I enjoy analysing how transportation infrastructure is developed, particularly highways, urban road networks and public transit systems. I am especially interested in transportation across Thunder Bay, Northern Ontario, Toronto, York Region and Kingston.</p><p>Cycling is my primary means of commuting, although I also drive and have experience with vehicles manufactured by Toyota, Nissan and Ford, including the Ford Mustang. My favourite mode of transportation is rail, and my favourite train model is the Bombardier T1, used on the Toronto subway. As of November 2026, I have taken 51 flights.</p><p>I strongly believe that transportation should be safe and respectful for everyone. Aggressive driving, jaywalking and other forms of inconsiderate road behaviour are among my biggest pet peeves.</p><p><strong>SAFE ROADS BEGIN WITH RESPECT. SAFE ROADS BEGIN WITH YOU AND ME.</strong></p></div></details></div>
+    <div class="interest-card">
+    <div aria-hidden="true" class="interest-card-icon">
+    <svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+    <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"></path><path class="accent" d="M8 11h2M14 11h2"></path>
+    </svg>
+    </div>
+    <h3 data-i18n="hobbyArchitecture">Architecture</h3>
+    <details class="interest-card-details"><summary data-i18n="interestReadMore">Read more</summary><div class="interest-card-caption" data-caption="architecture"><p>I believe that architecture always tells a story. Some buildings offer the comfort and convenience of modern design, while others carry decades or even centuries of history, with stories waiting to be discovered. I appreciate the benefits of modernity while remaining fascinated by the stories that previous generations have left behind through their buildings.</p><p>Beyond appreciating architecture, I enjoy analysing how existing facilities can be improved and imagining new spaces that combine functionality, comfort and thoughtful design.</p><p>While I am neither an architect nor an engineer, I enjoy exploring architecture as a hobbyist, guided by curiosity, creativity and an appreciation for the built environment.</p></div></details></div>
+    <div class="interest-card">
+    <div aria-hidden="true" class="interest-card-icon">
+    <svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+    <path d="M3 21V9h7v12M10 21V4h6v17M16 21v-9h5v9"></path><path class="accent" d="M6 12h1M6 16h1M13 8h1M13 12h1M18 15h1"></path>
+    </svg>
+    </div>
+    <h3 data-i18n="hobbyUrban">Urban Design</h3>
+    <details class="interest-card-details"><summary data-i18n="interestReadMore">Read more</summary><div class="interest-card-caption" data-caption="urbanDesign"><p>Urbanism is an important part of my personality. I enjoy exploring how different cities develop their own identities, respond to changing needs and continuously improve. I believe that urban design is an essential expression of civic identity, reflecting the history, values and aspirations of a community.</p><p>I am particularly fascinated by how cities have evolved over time, from the compact, walkable downtowns of earlier centuries to the automobile-centred planning of the mid-20th century and the growing emphasis on sustainability, public transportation and active mobility in the 21st century.</p><p><strong>Some cities whose urban design I particularly admire include:</strong></p><ul><li><strong>Toronto, Ontario:</strong> A dynamic city with robust public transportation, dedicated cycling infrastructure and a fascinating mixture of historic and modern architecture. Its continuous development of new neighbourhoods and infrastructure makes it especially interesting to follow.</li><li><strong>Thunder Bay, Ontario:</strong> A relatively stable city that continues to pursue new initiatives and improvements. I appreciate its cycling infrastructure and revitalisation projects, particularly the transformation of the Victoriaville area.</li><li><strong>Quebec City, Quebec:</strong> A city rich in history that makes a remarkable effort to preserve its architectural and cultural heritage. Exploring its historic neighbourhoods offers an immersive experience and a strong connection to the past.</li><li><strong>Kingston, Ontario:</strong> A historic city that successfully combines heritage with modern amenities, demonstrating that preservation and contemporary development can coexist.</li><li><strong>Amsterdam, Netherlands:</strong> An inspiring example of sustainable urbanism, with a strong emphasis on public transportation, cycling infrastructure and reducing dependence on private automobiles.</li></ul><p>For me, urbanism is about understanding what makes a city distinctive and imagining how thoughtful planning can make it an even better place to live.</p></div></details></div>
+    <div class="interest-card">
+    <div aria-hidden="true" class="interest-card-icon">
+    <svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+    <path d="M7 4h12v14H8a3 3 0 0 0 0 3h11M7 4a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3"></path><path class="accent" d="M10 9h6M10 13h5"></path>
+    </svg>
+    </div>
+    <h3 data-i18n="hobbyHistory">History</h3>
+    <details class="interest-card-details"><summary data-i18n="interestReadMore">Read more</summary><div class="interest-card-caption" data-caption="history"><p>History following the beginning of the Industrial Revolution, around 1750, particularly fascinates me. In fewer than 300 years, humanity has undergone extraordinary social, political and technological transformations. We have developed democracies, found cures and treatments for numerous diseases, grown in our appreciation of one another, confronted shared challenges, invented remarkable technologies and even ventured into distant corners of the universe.</p><p>To me, history is the continuing story of humanity: a story that began long before us and will continue long after us. Understanding the past allows us to appreciate how far we have come, recognise the challenges we have faced and imagine what the future might hold.</p><p>My particular interests include <strong>Canadian history, American history, world history since 1914, the local histories of cities that hold a special place in my heart, and my own family history.</strong></p></div></details></div>
+    <div class="interest-card">
+    <div aria-hidden="true" class="interest-card-icon">
+    <svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewbox="0 0 24 24">
+    <circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c-3 3-3 15 0 18M12 3c3 3 3 15 0 18"></path><path d="M5 7h14M5 17h14"></path>
+    </svg>
+    </div>
+    <h3 data-i18n="hobbyGeography">Geography</h3>
+    <details class="interest-card-details"><summary data-i18n="interestReadMore">Read more</summary><div class="interest-card-caption" data-caption="geography"><p>We are privileged to live on such a beautiful planet. From the highest mountains to the deepest oceans and the seemingly endless skies, Earth is filled with extraordinary landscapes and natural wonders. Learning about our planet and exploring everything it has to offer never ceases to excite me.</p><p>One of my favourite activities is studying maps and cartography. These remarkable little representations can bring the entire world into the palms of our hands, helping us understand places, discover connections and make exploring even more enjoyable.</p><p>I also have a great passion for travelling and discovering new places. I warmly encourage you to explore the <strong>Travel</strong> section of my website to learn more about my journeys and experiences.</p></div></details></div>
+    </div>
     </section>
 
-    <section id="hardware" class="interest-detail">
-      <h2 data-i18n="hobbyHardware">Computer Hardware</h2>
-      <p data-i18n="hardwareDescription">
-        My computers include AAFC2 and AAFC9. I have repaired
-        three laptops and scrapped two.
-      </p>
+    <section id="travel" class="interest-detail travel-section-wrapper">
+    <h2 data-i18n="travelHeading">Travel</h2>
+        <!-- <section class="hero" aria-labelledby="travel-title"><p class="eyebrow" data-i18n="eyebrow">DISCOVERING OUR WORLD</p><h1 id="travel-title" data-i18n="title">My Travels</h1><p data-i18n="intro">A collection of places I have explored, destinations I hope to discover, and a map bringing them together.</p></section> -->
+        <div class="travel-nav"><a href="#visited" data-i18n="navVisited">Where I Have Been</a><a href="#wishlist" data-i18n="navWishlist">Where I Want to Be</a><a href="#map" data-i18n="navMap">My Travel Map</a></div>
+        <section id="visited" class="travel-section" aria-labelledby="visited-title"><div class="section-heading"><span class="section-number">01</span><div><h2 id="visited-title" data-i18n="visitedTitle">Where I Have Been</h2><p data-i18n="visitedDesc">Countries and communities I have had the opportunity to explore.</p></div></div><div id="visited-list" class="country-grid"></div></section>
+        <section id="wishlist" class="travel-section" aria-labelledby="wishlist-title"><div class="section-heading"><span class="section-number">02</span><div><h2 id="wishlist-title" data-i18n="wishlistTitle">Where I Want to Be</h2><p data-i18n="wishlistDesc">The places I hope to explore in the future, including countries I have only passed through.</p></div></div><div id="wishlist-list" class="country-grid"></div><p class="note" data-i18n="wishlistNote">The United Kingdom, Türkiye and the United Arab Emirates are future destinations, even though I have had layovers there.</p></section>
+        
+        
+      <section id="map" class="travel-section" aria-labelledby="map-title">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <h2 id="map-title" data-i18n="mapTitle">My Travel Map</h2>
+          </div>
+        </div>
+
+        <div class="travel-maps">
+           <!-- World travel map -->
+          <img
+            src="Assets/World.png"
+            alt="World map showing visited countries, layovers and wishlist destinations."
+            loading="lazy"
+          >
+
+          <!-- North American travel map -->
+          <img
+            src="Assets/North America.png"
+            alt="Map of Canada and the United States showing visited and wishlist provinces and states."
+            loading="lazy"
+          >
+         
+        </div>
+      </section>
+
+
     </section>
 
+    <!-- HOBBIES -->
     <section id="gaming" class="interest-detail">
       <h2 data-i18n="hobbyGaming">Gaming</h2>
       <p data-i18n="gamingDescription">
         I enjoy Minecraft, city-building simulations, Batman:
         Arkham games, LEGO games and other adventures.
-      </p>
-    </section>
-
-    <section id="transportation" class="interest-detail">
-      <h2 data-i18n="hobbyTransportation">Transportation</h2>
-      <p data-i18n="transportationDescription">
-        Exploring transportation systems and their relationship
-        with cities and communities.
-      </p>
-    </section>
-
-    <section id="architecture" class="interest-detail">
-      <h2 data-i18n="hobbyArchitecture">Architecture</h2>
-      <p data-i18n="architectureDescription">
-        An interest in buildings, architectural styles and
-        the character of the built environment.
-      </p>
-    </section>
-
-    <section id="urban-design" class="interest-detail">
-      <h2 data-i18n="hobbyUrban">Urban Design</h2>
-      <p data-i18n="urbanDescription">
-        Exploring how streets, neighbourhoods and public spaces
-        shape the experience of a city.
-      </p>
-    </section>
-
-    <section id="history" class="interest-detail">
-      <h2 data-i18n="hobbyHistory">History</h2>
-      <p data-i18n="historyDescription">
-        Learning about the past and how historical events
-        have shaped the present.
-      </p>
-    </section>
-
-    <section id="geography" class="interest-detail">
-      <h2 data-i18n="hobbyGeography">Geography</h2>
-      <p data-i18n="geographyDescription">
-        Places I have called home, destinations I have visited
-        and countries I hope to explore.
       </p>
     </section>
 
@@ -344,13 +378,13 @@
           <strong>
             <span data-i18n="footerLastUpdated">Last Updated:</span>
           </strong>
-          <time class="footer-updated-date" datetime="2026-10-26">26-10-2026</time>
+          <time class="footer-updated-date" datetime="2026-10-27">27-10-2026</time>
         </p>
 
       </div>
     </footer>
 
   <script src="script.js"></script>
-  <script src="interests.js"></script>
+  <script src="travel.js"></script>
 </body>
 </html>

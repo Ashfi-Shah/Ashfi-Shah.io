@@ -229,3 +229,4 @@ window.portfolioFrench = [
   "Ce site Web a été fièrement développé au Canada.",
   "Ce site Web a été programmé en HTML, CSS et JavaScript. Le code a été généré avec l’aide de modèles d’intelligence artificielle générative comme ChatGPT 6 d’OpenAI. Tout le code source est disponible sur GitHub."
 ];
+footerLastUpdated: "Dernière mise à jour :"

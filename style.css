@@ -1421,3 +1421,147 @@ button.contact-link {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==========================================
+   FOOTER — LAST UPDATED
+   ========================================== */
+
+/* Footer layout */
+.site-footer .footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.site-footer .footer-updated {
+  display: block;
+  visibility: visible;
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 1;
+}
+
+.site-footer .footer-updated-date {
+  font-weight: 600;
+}
+
+
+/* ==========================================
+   FOOTER — LEFT ALIGNMENT
+   ========================================== */
+
+.site-footer .footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+}
+
+.site-footer .footer-inner p {
+  text-align: left;
+}
+
+.site-footer .footer-updated {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+
+/* UNIFORM WORLD CLOCK CARDS */
+
+.clocks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.site-clock {
+  box-sizing: border-box;
+  width: 100%;
+  height: 130px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.clock-time {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.clock-location {
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+/* WORLD CLOCK GRID — 5 COLUMNS × 3 ROWS */
+
+.clocks-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.site-clock {
+  box-sizing: border-box;
+  width: 100%;
+  height: 130px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.clock-time {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.clock-location {
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* TABLETS */
+@media (max-width: 900px) {
+  .clocks-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .clocks-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+

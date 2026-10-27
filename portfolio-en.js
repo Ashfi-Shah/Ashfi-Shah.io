@@ -229,3 +229,4 @@ window.portfolioEnglish = [
   "This website was proudly developed in Canada.",
   "This website was programmed using HTML, CSS and JavaScript. Code was generated with the assistance of generative AI models such as OpenAI's ChatGPT 6. All source code is available on GitHub."
 ];
+footerLastUpdated: "Last Updated:"

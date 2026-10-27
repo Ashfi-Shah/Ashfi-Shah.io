@@ -113,16 +113,52 @@
       <p class="eyebrow" data-i18n="timetitle">
           <br><br>CURRENT TIME
         </p>
-
+      
       <!-- LIVE DIGITAL CLOCKS -->
       <div class="clocks-container">
+
+        <!-- VANCOUVER -->
+        <div class="site-clock" aria-label="Current time in Vancouver">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockVancouver" class="clock-time">--:--:--</span>
+            <span class="clock-location">VANCOUVER</span>
+          </div>
+        </div>
+
+        <!-- SEATTLE -->
+        <div class="site-clock" aria-label="Current time in Seattle">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockSeattle" class="clock-time">--:--:--</span>
+            <span class="clock-location">SEATTLE</span>
+          </div>
+        </div>
+
+        <!-- LOS ANGELES -->
+        <div class="site-clock" aria-label="Current time in Los Angeles">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockLosAngeles" class="clock-time">--:--:--</span>
+            <span class="clock-location">LOS ANGELES</span>
+          </div>
+        </div>
 
         <!-- WINNIPEG -->
         <div class="site-clock" aria-label="Current time in Winnipeg">
           <span class="clock-indicator"></span>
           <div class="clock-content">
             <span id="clockWinnipeg" class="clock-time">--:--:--</span>
-            <span class="clock-location"><br><br>WINNIPEG · MB</span>
+            <span class="clock-location">WINNIPEG</span>
+          </div>
+        </div>
+
+        <!-- THUNDER BAY -->
+        <div class="site-clock" aria-label="Current time in Thunder Bay">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockThunderBay" class="clock-time">--:--:--</span>
+            <span class="clock-location">THUNDER BAY</span>
           </div>
         </div>
 
@@ -131,7 +167,25 @@
           <span class="clock-indicator"></span>
           <div class="clock-content">
             <span id="clockToronto" class="clock-time">--:--:--</span>
-            <span class="clock-location">THUNDER BAY · ON<br>TORONTO · ON<br>KINGSTON · ON</span>
+            <span class="clock-location">TORONTO</span>
+          </div>
+        </div>
+
+        <!-- KINGSTON -->
+        <div class="site-clock" aria-label="Current time in Kingston">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockKingston" class="clock-time">--:--:--</span>
+            <span class="clock-location">KINGSTON</span>
+          </div>
+        </div>
+
+        <!-- LONDON -->
+        <div class="site-clock" aria-label="Current time in London, United Kingdom">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockLondon" class="clock-time">--:--:--</span>
+            <span class="clock-location">LONDON</span>
           </div>
         </div>
 
@@ -140,7 +194,61 @@
           <span class="clock-indicator"></span>
           <div class="clock-content">
             <span id="clockGMT" class="clock-time">--:--:--</span>
-            <span class="clock-location">LONDON · UK<br>(Winter/L'Hiver)<br>GMT · UTC+0</span>
+            <span class="clock-location">GMT · UTC+0</span>
+          </div>
+        </div>
+
+        <!-- PARIS -->
+        <div class="site-clock" aria-label="Current time in Paris">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockParis" class="clock-time">--:--:--</span>
+            <span class="clock-location">PARIS</span>
+          </div>
+        </div>
+
+        <!-- JEDDAH -->
+        <div class="site-clock" aria-label="Current time in Jeddah">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockJeddah" class="clock-time">--:--:--</span>
+            <span class="clock-location">JEDDAH</span>
+          </div>
+        </div>
+
+        <!-- DUBAI -->
+        <div class="site-clock" aria-label="Current time in Dubai">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockDubai" class="clock-time">--:--:--</span>
+            <span class="clock-location">DUBAI</span>
+          </div>
+        </div>
+
+        <!-- CHITTAGONG -->
+        <div class="site-clock" aria-label="Current time in Chittagong">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockChittagong" class="clock-time">--:--:--</span>
+            <span class="clock-location">CHITTAGONG</span>
+          </div>
+        </div>
+
+        <!-- SEOUL -->
+        <div class="site-clock" aria-label="Current time in Seoul">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockSeoul" class="clock-time">--:--:--</span>
+            <span class="clock-location">SEOUL</span>
+          </div>
+        </div>
+
+        <!-- MELBOURNE -->
+        <div class="site-clock" aria-label="Current time in Melbourne">
+          <span class="clock-indicator"></span>
+          <div class="clock-content">
+            <span id="clockMelbourne" class="clock-time">--:--:--</span>
+            <span class="clock-location">MELBOURNE</span>
           </div>
         </div>
 
@@ -501,28 +609,25 @@
   <!-- ==========================================
        FOOTER
        ========================================== -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
 
-  <footer class="site-footer">
+        <p>
+          <strong>This website was proudly developed in Canada.</strong><br>
+          This website was programmed using HTML, CSS and JavaScript.
+          Code was generated with the assistance of generative AI models
+          such as OpenAI's ChatGPT 6. All source code is available on GitHub.
+        </p>
 
-    <div class="container footer-inner">
+        <p class="footer-updated">
+          <strong>
+            <span data-i18n="footerLastUpdated">Last Updated:</span>
+          </strong>
+          <time class="footer-updated-date" datetime="2026-10-26">26-10-2026</time>
+        </p>
 
-      <p>
-        <strong>
-          This website was proudly developed in Canada.
-        </strong>
-
-        <br>
-
-        This website was programmed using HTML, CSS and JavaScript.
-        Code was generated with the assistance of generative AI models
-        such as OpenAI's ChatGPT 6.
-        All source code is available on GitHub.
-      </p>
-
-    </div>
-
-  </footer>
-
+      </div>
+    </footer>
 
   <!-- ==========================================
        LUCIDE ICONS

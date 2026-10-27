@@ -4,7 +4,6 @@ const translations = {
     heroTitle:"Hello, I'm Ashfi.",heroSubtitle:'MSc Computing Student, Queen’s University',
     heroCopy:'Explore my academic journey, research, projects and professional experience.',
     portfolioButton:'My Portfolio',downloadResume: "Download Résumé",aboutTitle:'About Me',
-    //<CodeBlock language="javascript" editable>
       aboutCopy: `Ashfi Shah (né Hasnain) is a research-stream Master’s of Computing student at Queen’s University in Kingston, Ontario.
 
       He grew up in Thunder Bay, Ontario, where he earned his OSSD from Superior Collegiate & Vocational Institute in June 2021.
@@ -18,7 +17,6 @@ const translations = {
       Ashfi hopes to continue gaining experience in computing while contributing to academia through research and teaching. Following his MSc, he plans to pursue a PhD.
 
       “You can succeed if you try hard enough.” — Grade 12 senior quote, 2021`,
-    //</CodeBlock>
    
     
     educationTitle: "Education",
@@ -83,13 +81,15 @@ const translations = {
     musicTie: "Tied with",
     musicHonourableHeading: "Honourable Mentions",
     musicListenSpotify: "Listen on Spotify ↗",
+    
+    footerLastUpdated: "Last Updated:",
+
   },
   fr: {
     navAbout:'À propos',navWork:'Portfolio',navContact:'Coordonnées',welcome:'BIENVENUE · WELCOME',
     heroTitle:'Bonjour, moi, c’est Ashfi.',heroSubtitle:'MSc Computing Student, Queen’s University',
     heroCopy:'Découvrez mon parcours universitaire, mes recherches, mes projets et mon expérience professionnelle.',
     portfolioButton:'Mon portfolio',downloadResume: "Télécharger mon CV (Anglais seulement)",aboutTitle:'À propos de moi',
-    //<CodeBlock language="javascript" editable>
         aboutCopy: `Ashfi Shah (né Hasnain) est étudiant à computing (la maîtrise en informatique), avec cheminement de recherche, à Queen’s University, à Kingston, en Ontario.
 
         Il a grandi à Thunder Bay, en Ontario, où il a obtenu son diplôme d’études secondaires de l’Ontario (DESO) au Superior Collegiate & Vocational Institute en juin 2021.
@@ -103,7 +103,6 @@ const translations = {
         Ashfi souhaite continuer à acquérir de l’expérience en informatique tout en contribuant au milieu universitaire par la recherche et l’enseignement. Après sa maîtrise, il prévoit entreprendre un doctorat.
 
         "You can succeed if you try hard enough." (« Tu peux réussir si tu fais suffisamment d’efforts. ») — Citation de fin d’études secondaires, 12e année, 2021`,
-    //</CodeBlock>,
     
     
     educationTitle: "Formation",
@@ -167,95 +166,148 @@ const translations = {
     musicComingSoon: "Restez à l'écoute — à découvrir en décembre !",
     musicTie: "Ex æquo avec",
     musicHonourableHeading: "Mentions honorables",
-    musicListenSpotify: "Écouter sur Spotify ↗",  
+    musicListenSpotify: "Écouter sur Spotify ↗", 
+    
+    footerLastUpdated: "Dernière mise à jour :",
   }
 };
-setLanguage("en");
 
+/* ==========================================
+   LANGUAGE SELECTION AND TRANSLATIONS
+   ========================================== */
+
+function browserLanguage() {
+  const languages = navigator.languages || [navigator.language || "en"];
+  for (const language of languages) {
+    const code = language.toLowerCase().split("-")[0];
+    if (code === "en" || code === "fr") return code;
+  }
+  return "en";
+}
+
+function getSavedLanguage() {
+  try { return localStorage.getItem("ashfi-language"); }
+  catch { return null; }
+}
+
+function saveLanguage(lang) {
+  try { localStorage.setItem("ashfi-language", lang); }
+  catch { /* Storage may be disabled. */ }
+}
+
+function setLanguage(lang, remember = false) {
+  if (!translations[lang]) lang = "en";
+  document.documentElement.lang = lang === "fr" ? "fr-CA" : "en-GB";
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const value = translations[lang][element.dataset.i18n];
+    if (value !== undefined) element.textContent = value;
+  });
+
+  // Format the actual update date specified in each page's HTML.
+  document.querySelectorAll(".footer-updated-date").forEach((element) => {
+    const isoDate = element.getAttribute("datetime");
+    if (!isoDate) return;
+
+    const [year, month, day] = isoDate.split("-");
+
+    element.textContent = `${day}-${month}-${year}`;
+  });
+
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+  });
+
+  document.title = lang === "fr"
+    ? "Ashfi | Portfolio personnel"
+    : "Ashfi | Personal Portfolio";
+
+  if (remember) saveLanguage(lang);
+}
+
+/* ==========================================
+   LIVE CLOCKS: WINNIPEG, TORONTO AND GMT
+   ========================================== */
+function updateClock() {
+  const now = new Date();
+
+  const clocks = [
+    ["clockVancouver", "Etc/GMT+7"],
+    ["clockSeattle", "America/Los_Angeles"],
+    ["clockLosAngeles", "America/Los_Angeles"],
+    ["clockWinnipeg", "America/Winnipeg"],
+    ["clockThunderBay", "America/Toronto"],
+    ["clockToronto", "America/Toronto"],
+    ["clockKingston", "America/Toronto"],
+    ["clockGMT", "UTC"],
+    ["clockLondon", "Europe/London"],
+    ["clockParis", "Europe/Paris"],
+    ["clockJeddah", "Asia/Riyadh"],
+    ["clockDubai", "Asia/Dubai"],
+    ["clockChittagong", "Asia/Dhaka"],
+    ["clockSeoul", "Asia/Seoul"],
+    ["clockMelbourne", "Australia/Melbourne"]
+  ];
+
+  clocks.forEach(([id, timeZone]) => {
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    element.textContent = now.toLocaleTimeString("en-GB", {
+      timeZone,
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hourCycle: "h23"
+    });
+  });
+}
 
 
 /* ==========================================
-   LIVE CLOCKS
-   Winnipeg, Toronto and GMT
+   ADDRESS POP-UP
    ========================================== */
 
-function updateClock() {
-    const now = new Date();
-
-    const clockSettings = [
-        ["clockWinnipeg", "America/Winnipeg"],
-        ["clockToronto", "America/Toronto"],
-        ["clockGMT", "UTC"]
-    ];
-
-    clockSettings.forEach(function (clock) {
-        const element = document.getElementById(clock[0]);
-
-        if (element) {
-            const time = now.toLocaleTimeString("en-GB", {
-                timeZone: clock[1],
-                hour: "2-digit",
-                minute: "2-digit",
-                second: "2-digit",
-                hourCycle: "h23"
-            });
-
-            element.textContent = time;
-        }
-    });
-}
-
-// Start immediately and update every second
-updateClock();
-setInterval(updateClock, 1000);
-
-function browserLanguage(){
-  const languages = navigator.languages || [navigator.language || 'en'];
-  for(const language of languages){const code=language.toLowerCase().split('-')[0];if(code==='en'||code==='fr')return code;}
-  return 'en';
-}
-function getSavedLanguage(){try{return localStorage.getItem('ashfi-language')}catch{return null}}
-function saveLanguage(lang){try{localStorage.setItem('ashfi-language',lang)}catch{}}
-function setLanguage(lang,remember=false){
-  if(!translations[lang])lang='en';
-  document.documentElement.lang=lang==='fr'?'fr-CA':'en-GB';
-  document.querySelectorAll('[data-i18n]').forEach(el=>{const value=translations[lang][el.dataset.i18n];if(value!==undefined)el.textContent=value});
-  document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===lang)));
-  document.title=lang==='fr'?'Ashfi | Portfolio personnel':'Ashfi | Personal Portfolio';
-  if(remember)saveLanguage(lang);
-}
-document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>setLanguage(button.dataset.lang,true)));
-document.getElementById('year').textContent=new Date().getFullYear();
-const saved=getSavedLanguage();setLanguage(saved&&translations[saved]?saved:browserLanguage());
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
+function initialiseAddressPopup() {
   const addressButton = document.getElementById("addressButton");
   const addressPopup = document.getElementById("addressPopup");
   const closeAddress = document.getElementById("closeAddress");
+  if (!addressButton || !addressPopup || !closeAddress) return;
 
-  if (!addressButton || !addressPopup || !closeAddress) {
-    console.error("Address pop-up elements not found.");
-    return;
-  }
-
-  addressButton.addEventListener("click", function () {
-    addressPopup.showModal();
+  addressButton.addEventListener("click", () => {
+    if (typeof addressPopup.showModal === "function") addressPopup.showModal();
   });
-
-  closeAddress.addEventListener("click", function () {
-    addressPopup.close();
+  closeAddress.addEventListener("click", () => {
+    if (typeof addressPopup.close === "function") addressPopup.close();
   });
-});
-
+}
 
 /* ==========================================
-   LIVE DIGITAL CLOCKS
-   Toronto, Winnipeg and GMT
+   INITIALISE AFTER HTML HAS LOADED
    ========================================== */
 
+function initialiseWebsite() {
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.addEventListener("click", () => setLanguage(button.dataset.lang, true));
+  });
 
+  const yearElement = document.getElementById("year");
+  if (yearElement) yearElement.textContent = new Date().getFullYear();
 
+  const saved = getSavedLanguage();
+  setLanguage(saved && translations[saved] ? saved : browserLanguage());
+
+  updateClock();
+  if (["clockWinnipeg", "clockToronto", "clockGMT"].some(id => document.getElementById(id))) {
+    setInterval(updateClock, 1000);
+  }
+  initialiseAddressPopup();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initialiseWebsite);
+} else {
+  initialiseWebsite();
+}
 
 

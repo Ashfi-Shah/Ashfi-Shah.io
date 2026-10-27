@@ -1624,3 +1624,369 @@ button.contact-link {
 .country-body .region-static {
   font-weight: 600;
 }
+
+
+/* ========================================
+   FAVOURITES
+======================================== */
+
+.favourites-section {
+  margin-top: 48px;
+}
+
+.favourites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.favourite-card {
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #dce3ec;
+  border-top: 4px solid #c82333;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(10, 30, 55, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.favourite-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(10, 30, 55, 0.1);
+}
+
+.favourite-card h3 {
+  margin: 12px 0 8px;
+  color: #142b4d;
+  font-size: 1rem;
+}
+
+.favourite-card p {
+  line-height: 1.6;
+}
+
+.favourite-answer {
+  color: #142b4d;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.favourite-image {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #edf1f6;
+}
+
+.favourite-poster {
+  height: 250px;
+  object-fit: contain;
+}
+
+.favourite-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  border-radius: 8px;
+  background: #f0f3f8;
+  font-size: 3.5rem;
+}
+
+/* Colours */
+
+.favourite-colours {
+  grid-column: 1 / -1;
+}
+
+.favourite-colour-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.favourite-colour {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.colour-swatch {
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #ccd4df;
+  border-radius: 8px;
+}
+
+.colour-swatch.navy {
+  background: #142b4d;
+}
+
+.colour-swatch.red {
+  background: #c82333;
+}
+
+.colour-swatch.white {
+  background: #ffffff;
+}
+
+.favourite-colour h4 {
+  margin: 0 0 6px;
+  color: #142b4d;
+}
+
+.favourite-colour p {
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .favourites-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .favourite-colour-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .favourites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .favourite-colours {
+    grid-column: auto;
+  }
+
+  .favourite-image {
+    height: 220px;
+  }
+
+  .favourite-poster {
+    height: 260px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .favourite-card {
+    transition: none;
+  }
+}
+
+/* Keep favourite cards compact */
+.favourites-grid {
+  align-items: start;
+}
+
+/* Display the complete photograph */
+.favourite-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+/* Improve text spacing */
+.favourite-card h3 {
+  margin: 16px 0 6px;
+}
+
+.favourite-card .favourite-answer {
+  margin: 0;
+}
+
+/* Preserve portrait posters */
+.favourite-poster {
+  height: 250px;
+  object-fit: contain;
+}
+
+
+/* Clickable Favourites cards */
+a.favourite-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.favourite-link:hover {
+  transform: translateY(-4px);
+  border-top-color: #142b4d;
+  box-shadow: 0 10px 28px rgba(10, 30, 55, 0.14);
+}
+
+a.favourite-link:focus-visible {
+  outline: 3px solid #c82333;
+  outline-offset: 4px;
+}
+
+a.favourite-link:hover .favourite-answer {
+  color: #c82333;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.favourite-link {
+    transition: none;
+  }
+}
+
+/* Large square popcorn graphic */
+.favourite-popcorn {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  background: #f0f3f8;
+  border-radius: 8px;
+}
+
+
+/* Large square television graphic */
+.favourite-tv {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7rem;
+  background: #f0f3f8;
+  border-radius: 8px;
+}
+
+
+/* Favourite Food photograph */
+.favourite-food {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #f0f3f8;
+  border-radius: 8px;
+}
+
+
+.favourite-gulab-jamun {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+}
+
+.favourite-clipart {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+
+/* Favourite Drink photograph */
+.favourite-drink {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Favourite Phone Brand photograph */
+.favourite-phone {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #f0f3f8;
+  border-radius: 8px;
+}
+
+
+/* Favourite Car Brand photograph */
+.favourite-car {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #f0f3f8;
+  border-radius: 8px;
+}
+
+
+/* Favourite Place photograph */
+.favourite-toronto {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* Favourite Colours — hover effects */
+.favourite-colours {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-top-color 0.2s ease;
+}
+
+.favourite-colours:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(10, 30, 55, 0.12);
+
+  /* Navy, red and white */
+  border-top-color: transparent;
+  border-image: linear-gradient(
+    to right,
+    #142b4d 0%,
+    #142b4d 33.33%,
+    #c82333 33.33%,
+    #c82333 66.66%,
+    #ffffff 66.66%,
+    #ffffff 100%
+  ) 1;
+}
+
+.favourite-colours h3,
+.favourite-colours h4 {
+  transition: color 0.2s ease;
+}
+
+.favourite-colours:hover h3 {
+  color: #c82333;
+}
+
+.favourite-colours:hover .favourite-colour:nth-child(1) h4 {
+  color: #142b4d;
+}
+
+.favourite-colours:hover .favourite-colour:nth-child(2) h4 {
+  color: #c82333;
+}
+
+.favourite-colours:hover .favourite-colour:nth-child(3) h4 {
+  color: #718096;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .favourite-colours,
+  .favourite-colours h3,
+  .favourite-colours h4 {
+    transition: none;
+  }
+}

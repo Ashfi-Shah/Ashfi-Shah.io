@@ -64,15 +64,17 @@ const translations = {
     hobbiesTitle: "My Hobbies & Interests",
     hobbyTechnology: "Technology",
     hobbyHardware: "Computer Hardware",
-    hobbyGaming: "Gaming",
+    hobbyList: "Hobbies",
+    hobbyDescription: "My hobbies and interests.",
     hobbyTransportation: "Transportation",
     hobbyArchitecture: "Architecture",
     hobbyUrban: "Urban Design",
     hobbyHistory: "History",
     hobbyGeography: "Geography",
-    hobbyCycling: "Cycling",
-      hobbyMusic: "Music",
-      musicIntroduction: "Music deeply inspires me to keep pushing forwards. I believe that music is an important form of self-expression, and I use it to communicate my feelings, even as they evolve over the years. Here is a collection of songs you can find on my playlists:",
+    favouritesTitle: "Favourites",
+    favouritesDescription: "A look at my favourite colours, foods, movies, animals, and more.",
+    hobbyMusic: "Music",
+    musicIntroduction: "Music deeply inspires me to keep pushing forwards. I believe that music is an important form of self-expression, and I use it to communicate my feelings, even as they evolve over the years. Here is a collection of songs you can find on my playlists:",
     musicSignatureHeading: "Main Favourites",
     musicRepresentative: "A Song That Represents Me",
     musicFavourite: "My All-Time Favourite Song",
@@ -85,6 +87,7 @@ const translations = {
     footerLastUpdated: "Last Updated:",
     interestsGridHeading: "My Interests",
     interestTechnologyHardware: "Technology & Hardware",
+    interestsHeading: "Interests, Hobbies, and Favourites",
     interestReadMore: "Read more",
 
     "technologyHardware": "<p>I have always been fascinated by technology, both software and hardware. I enjoy collecting gadgets, particularly devices that work together within an interconnected ecosystem, and keeping up with the latest innovations. At the same time, I have a soft spot for older technology and believe in reducing electronic waste wherever possible. This has inspired me to repair three computers and build two from scratch.</p><p>I have experience with Windows XP through Windows 11 and am continuing to explore macOS and Linux. I also enjoy collecting Apple devices, including my iPhone 13, which holds special significance because of my fond memories of 2021.</p>",
@@ -92,7 +95,45 @@ const translations = {
     "architecture": "<p>I believe that architecture always tells a story. Some buildings offer the comfort and convenience of modern design, while others carry decades or even centuries of history, with stories waiting to be discovered. I appreciate the benefits of modernity while remaining fascinated by the stories that previous generations have left behind through their buildings.</p><p>Beyond appreciating architecture, I enjoy analysing how existing facilities can be improved and imagining new spaces that combine functionality, comfort and thoughtful design.</p><p>While I am neither an architect nor an engineer, I enjoy exploring architecture as a hobbyist, guided by curiosity, creativity and an appreciation for the built environment.</p>",
     "urbanDesign": "<p>Urbanism is an important part of my personality. I enjoy exploring how different cities develop their own identities, respond to changing needs and continuously improve. I believe that urban design is an essential expression of civic identity, reflecting the history, values and aspirations of a community.</p><p>I am particularly fascinated by how cities have evolved over time, from the compact, walkable downtowns of earlier centuries to the automobile-centred planning of the mid-20th century and the growing emphasis on sustainability, public transportation and active mobility in the 21st century.</p><p><strong>Some cities whose urban design I particularly admire include:</strong></p><ul><li><strong>Toronto, Ontario:</strong> A dynamic city with robust public transportation, dedicated cycling infrastructure and a fascinating mixture of historic and modern architecture. Its continuous development of new neighbourhoods and infrastructure makes it especially interesting to follow.</li><li><strong>Thunder Bay, Ontario:</strong> A relatively stable city that continues to pursue new initiatives and improvements. I appreciate its cycling infrastructure and revitalisation projects, particularly the transformation of the Victoriaville area.</li><li><strong>Quebec City, Quebec:</strong> A city rich in history that makes a remarkable effort to preserve its architectural and cultural heritage. Exploring its historic neighbourhoods offers an immersive experience and a strong connection to the past.</li><li><strong>Kingston, Ontario:</strong> A historic city that successfully combines heritage with modern amenities, demonstrating that preservation and contemporary development can coexist.</li><li><strong>Amsterdam, Netherlands:</strong> An inspiring example of sustainable urbanism, with a strong emphasis on public transportation, cycling infrastructure and reducing dependence on private automobiles.</li></ul><p>For me, urbanism is about understanding what makes a city distinctive and imagining how thoughtful planning can make it an even better place to live.</p>",
     "history": "<p>History following the beginning of the Industrial Revolution, around 1750, particularly fascinates me. In fewer than 300 years, humanity has undergone extraordinary social, political and technological transformations. We have developed democracies, found cures and treatments for numerous diseases, grown in our appreciation of one another, confronted shared challenges, invented remarkable technologies and even ventured into distant corners of the universe.</p><p>To me, history is the continuing story of humanity: a story that began long before us and will continue long after us. Understanding the past allows us to appreciate how far we have come, recognise the challenges we have faced and imagine what the future might hold.</p><p>My particular interests include <strong>Canadian history, American history, world history since 1914, the local histories of cities that hold a special place in my heart, and my own family history.</strong></p>",
-    "geography": "<p>We are privileged to live on such a beautiful planet. From the highest mountains to the deepest oceans and the seemingly endless skies, Earth is filled with extraordinary landscapes and natural wonders. Learning about our planet and exploring everything it has to offer never ceases to excite me.</p><p>One of my favourite activities is studying maps and cartography. These remarkable little representations can bring the entire world into the palms of our hands, helping us understand places, discover connections and make exploring even more enjoyable.</p><p>I also have a great passion for travelling and discovering new places. I warmly encourage you to explore the <strong>Travel</strong> section of my website to learn more about my journeys and experiences.</p>"
+    "geography": "<p>We are privileged to live on such a beautiful planet. From the highest mountains to the deepest oceans and the seemingly endless skies, Earth is filled with extraordinary landscapes and natural wonders. Learning about our planet and exploring everything it has to offer never ceases to excite me.</p><p>One of my favourite activities is studying maps and cartography. These remarkable little representations can bring the entire world into the palms of our hands, helping us understand places, discover connections and make exploring even more enjoyable.</p><p>I also have a great passion for travelling and discovering new places. I warmly encourage you to explore the <strong>Travel</strong> section of my website to learn more about my journeys and experiences.</p>",
+  
+        
+    favouritesTitle: "Favourites",
+    favouritesDescription: "A collection of my favourite things, places and experiences.",
+
+    favColours: "Favourite Colours",
+    favNavy: "Navy Blue",
+    favNavyDesc: "Description coming soon.",
+    favRed: "Red",
+    favRedDesc: "Description coming soon.",
+    favWhite: "White",
+    favWhiteDesc: "Description coming soon.",
+
+    favAnimal: "Favourite Animal",
+    favKangaroo: "Kangaroo",
+    favMovie: "Favourite Movie",
+    favTV: "Favourite TV Show",
+
+    favFood: "Favourite Food",
+    favFoodValue: "Varies with my mood",
+    favFoodDesc: "My favourite foods vary depending on the occasion. Some examples will be added here.",
+
+    favDessert: "Favourite Dessert",
+    favDrink: "Favourite Drink",
+    favLemonade: "Lemonade",
+
+    favPhone: "Favourite Phone Brand",
+    favCar: "Favourite Car Brand",
+    favPlace: "Favourite Place to Be",
+
+    
+    favNavyDesc: "Navy blue has been my favourite colour since July 2023. It makes me feel connected to some of nature's finest sights: the deep blue waters and the night sky illuminated by countless stars.",
+
+    favRedDesc: "Originally inspired by the Canadian flag, red has remained one of my favourite colours since December 2013. While red is often associated with negative emotions, I see it as a symbol of warmth, love and honour.",
+
+    favWhiteDesc: "Originally inspired by snow, white became one of my favourite colours in 2025. This colour symbolises light, fresh beginnings and the promise of a brighter future.",
+
+    favFoodDesc: "My favourite foods vary depending on the occasion.",
   },
   fr: {
     navAbout:'À propos',navWork:'Portfolio',navContact:'Coordonnées',welcome:'BIENVENUE · WELCOME',
@@ -157,15 +198,17 @@ const translations = {
     
     footerText:'Site personnel et portfolio',
     hobbiesTitle: "Mes loisirs et centres d'intérêt",
+    hobbyDescription: "Mes loisirs et centres d'intérêt.",
     hobbyTechnology: "Technologie",
     hobbyHardware: "Matériel informatique",
-    hobbyGaming: "Jeux vidéo",
+    hobbyList: "Loisirs",
     hobbyTransportation: "Transport",
     hobbyArchitecture: "Architecture",
     hobbyUrban: "Urbanisme",
     hobbyHistory: "Histoire",
     hobbyGeography: "Géographie",
-    hobbyCycling: "Vélo",
+    favouritesTitle: "Favoris",
+    favouritesDescription: "Un aperçu de mes couleurs, aliments, films, animaux et autres favoris.",
     hobbyMusic: "Musique",
     musicIntroduction: "La musique m’inspire profondément à continuer d’avancer. Je crois que la musique est une forme importante d’expression de soi, et je l’utilise pour communiquer mes sentiments, même lorsqu’ils évoluent au fil des années. Voici une collection de chansons que vous pouvez trouver dans mes listes de lecture :",
     musicSignatureHeading: "Mes chansons préférées",
@@ -180,13 +223,52 @@ const translations = {
     footerLastUpdated: "Dernière mise à jour :",
     interestsGridHeading: "Mes centres d’intérêt",
     interestTechnologyHardware: "Technologie et matériel informatique",
+    interestsHeading: "Centres d’intérêt, loisirs et favoris",
     interestReadMore: "En savoir plus",
     "technologyHardware": "<p>La technologie me fascine depuis toujours, tant sur le plan logiciel que matériel. J’aime collectionner les appareils, particulièrement ceux qui fonctionnent ensemble au sein d’un écosystème interconnecté, et suivre les dernières innovations. En même temps, j’ai un faible pour les technologies anciennes et je crois qu’il faut réduire autant que possible les déchets électroniques. Cette conviction m’a amené à réparer trois ordinateurs et à en assembler deux à partir de zéro.</p><p>Je connais les versions de Windows allant de Windows XP à Windows 11 et je continue à découvrir macOS et Linux. J’aime aussi collectionner les appareils Apple, dont mon iPhone 13, qui a une signification particulière en raison des beaux souvenirs que je garde de 2021.</p>",
     "transportation": "<p>Les transports sont l’une de mes passions les plus inhabituelles. J’aime analyser le développement des infrastructures de transport, notamment les autoroutes, les réseaux routiers urbains et les transports en commun. Je m’intéresse particulièrement à Thunder Bay, au Nord de l’Ontario, à Toronto, à la région de York et à Kingston.</p><p>Le vélo est mon principal moyen de déplacement, mais je conduis aussi. J’ai notamment conduit des véhicules de Toyota, de Nissan et de Ford, dont une Ford Mustang. Mon mode de transport préféré est le train, et mon modèle favori est le Bombardier T1 du métro de Toronto. En novembre 2026, j’avais effectué 51 vols.</p><p>Je crois fermement que les déplacements doivent être sûrs et respectueux pour tout le monde. La conduite agressive, la traversée imprudente des rues et les autres comportements irrespectueux sur la route comptent parmi mes plus grandes bêtes noires.</p><p><strong>LA SÉCURITÉ ROUTIÈRE COMMENCE PAR LE RESPECT. ELLE COMMENCE PAR VOUS ET MOI.</strong></p>",
     "architecture": "<p>Je crois que l’architecture raconte toujours une histoire. Certains bâtiments offrent le confort et la commodité du design moderne, tandis que d’autres portent des décennies, voire des siècles d’histoire, avec des récits qui ne demandent qu’à être découverts. J’apprécie les avantages de la modernité tout en restant fasciné par les histoires que les générations précédentes nous ont laissées à travers leurs bâtiments.</p><p>Au-delà de mon intérêt pour l’architecture, j’aime analyser les façons d’améliorer les installations existantes et imaginer de nouveaux espaces alliant fonctionnalité, confort et conception réfléchie.</p><p>Je ne suis ni architecte ni ingénieur : j’explore l’architecture en amateur, guidé par ma curiosité, ma créativité et mon appréciation du cadre bâti.</p>",
     "urbanDesign": "<p>L’urbanisme fait partie intégrante de ma personnalité. J’aime découvrir comment les villes développent leur identité, s’adaptent à de nouveaux besoins et s’améliorent continuellement. À mes yeux, l’aménagement urbain exprime l’identité civique ainsi que l’histoire, les valeurs et les aspirations d’une communauté.</p><p>L’évolution des villes me fascine particulièrement : des centres-villes compacts et propices à la marche des siècles passés à l’aménagement axé sur l’automobile du milieu du XXe siècle, puis à l’importance croissante accordée à la durabilité, aux transports en commun et aux déplacements actifs au XXIe siècle.</p><p><strong>Voici quelques villes dont j’admire particulièrement l’urbanisme :</strong></p><ul><li><strong>Toronto (Ontario) :</strong> Une ville dynamique dotée de transports en commun solides, d’infrastructures cyclables dédiées et d’un mélange fascinant d’architecture ancienne et moderne. Le développement continu de ses quartiers et infrastructures est particulièrement intéressant à suivre.</li><li><strong>Thunder Bay (Ontario) :</strong> Une ville relativement stable qui continue de lancer de nouvelles initiatives. J’apprécie ses infrastructures cyclables et ses projets de revitalisation, notamment la transformation du secteur de Victoriaville.</li><li><strong>Québec (Québec) :</strong> Une ville riche en histoire qui fait des efforts remarquables pour préserver son patrimoine architectural et culturel. Ses quartiers historiques offrent une expérience immersive et un lien profond avec le passé.</li><li><strong>Kingston (Ontario) :</strong> Une ville historique qui conjugue patrimoine et commodités modernes, montrant que préservation et développement contemporain peuvent coexister.</li><li><strong>Amsterdam (Pays-Bas) :</strong> Un exemple inspirant d’urbanisme durable, qui privilégie les transports en commun et le vélo tout en réduisant la dépendance à l’automobile.</li></ul><p>Pour moi, l’urbanisme consiste à comprendre ce qui rend une ville unique et à imaginer comment un aménagement réfléchi peut en faire un lieu de vie encore meilleur.</p>",
     "history": "<p>L’histoire depuis les débuts de la révolution industrielle, vers 1750, me fascine particulièrement. En moins de 300 ans, l’humanité a connu des transformations sociales, politiques et technologiques extraordinaires. Nous avons développé des démocraties, trouvé des traitements et des remèdes contre de nombreuses maladies, appris à mieux nous apprécier, affronté ensemble des défis, inventé des technologies remarquables et même exploré des régions lointaines de l’univers.</p><p>Pour moi, l’histoire est le récit continu de l’humanité : une histoire commencée bien avant nous et qui se poursuivra longtemps après nous. Comprendre le passé nous aide à mesurer le chemin parcouru, à reconnaître les défis surmontés et à imaginer l’avenir.</p><p>Je m’intéresse particulièrement à <strong>l’histoire canadienne, à l’histoire américaine, à l’histoire mondiale depuis 1914, à l’histoire locale des villes qui me sont chères ainsi qu’à ma propre histoire familiale.</strong></p>",
-    "geography": "<p>Nous avons la chance de vivre sur une planète aussi magnifique. Des plus hautes montagnes aux océans les plus profonds, en passant par les ciels qui semblent infinis, la Terre regorge de paysages et de merveilles naturelles extraordinaires. Découvrir notre planète et explorer tout ce qu’elle offre ne cesse de m’enthousiasmer.</p><p>L’une de mes activités préférées est l’étude des cartes et de la cartographie. Ces petites représentations remarquables peuvent mettre le monde entier au creux de nos mains, nous aider à comprendre les lieux, à découvrir des liens et à rendre l’exploration encore plus agréable.</p><p>J’aime aussi beaucoup voyager et découvrir de nouveaux endroits. Je vous invite chaleureusement à consulter la section <strong>Voyages</strong> de mon site pour en apprendre davantage sur mes aventures et mes expériences.</p>"
+    "geography": "<p>Nous avons la chance de vivre sur une planète aussi magnifique. Des plus hautes montagnes aux océans les plus profonds, en passant par les ciels qui semblent infinis, la Terre regorge de paysages et de merveilles naturelles extraordinaires. Découvrir notre planète et explorer tout ce qu’elle offre ne cesse de m’enthousiasmer.</p><p>L’une de mes activités préférées est l’étude des cartes et de la cartographie. Ces petites représentations remarquables peuvent mettre le monde entier au creux de nos mains, nous aider à comprendre les lieux, à découvrir des liens et à rendre l’exploration encore plus agréable.</p><p>J’aime aussi beaucoup voyager et découvrir de nouveaux endroits. Je vous invite chaleureusement à consulter la section <strong>Voyages</strong> de mon site pour en apprendre davantage sur mes aventures et mes expériences.</p>",
+
+        
+    favouritesTitle: "Mes favoris",
+    favouritesDescription: "Une collection de mes choses, lieux et expériences préférés.",
+
+    favColours: "Mes couleurs préférées",
+    favNavy: "Bleu marine",
+    favNavyDesc: "Description à venir.",
+    favRed: "Rouge",
+    favRedDesc: "Description à venir.",
+    favWhite: "Blanc",
+    favWhiteDesc: "Description à venir.",
+
+    favAnimal: "Mon animal préféré",
+    favKangaroo: "Kangourou",
+    favMovie: "Mon film préféré",
+    favTV: "Ma série télévisée préférée",
+
+    favFood: "Mes plats préférés",
+    favFoodValue: "Selon mon humeur",
+    favFoodDesc: "Mes préférences alimentaires varient selon l'occasion. J'ajouterai quelques exemples ici.",
+
+    favDessert: "Mon dessert préféré",
+    favDrink: "Ma boisson préférée",
+    favLemonade: "Limonade",
+
+    favPhone: "Ma marque de téléphone préférée",
+    favCar: "Ma marque automobile préférée",
+    favPlace: "Mon endroit préféré",
+
+          
+    favNavyDesc: "Le bleu marine est ma couleur préférée depuis juillet 2023. Il me rappelle certaines des plus belles merveilles de la nature : les eaux d’un bleu profond et le ciel nocturne illuminé d’innombrables étoiles.",
+
+    favRedDesc: "Inspiré à l’origine par le drapeau canadien, le rouge demeure l’une de mes couleurs préférées depuis décembre 2013. Bien que cette couleur soit souvent associée à des émotions négatives, je la considère comme un symbole de chaleur, d’amour et d’honneur.",
+
+    favWhiteDesc: "Inspiré à l’origine par la neige, le blanc est devenu l’une de mes couleurs préférées en 2025. Cette couleur symbolise la lumière, les nouveaux départs et la promesse d’un avenir plus lumineux.",
+
+    favFoodDesc: "Mes préférences alimentaires varient selon l'occasion.",
   }
 };
 

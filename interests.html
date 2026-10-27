@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ashfi's bilingual personal website and portfolio.">
-  <title>Ashfi Shah | Hobbies and Interests</title>
+  <title>Ashfi Shah | Interests, Hobbies, and Favourites</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="travel.css">
 </head>
@@ -23,7 +23,7 @@
     </nav>
 
     <div class="interests-intro">
-      <h1 data-i18n="interestsHeading">My Interests</h1>
+      <h1 data-i18n="interestsHeading">Interests, Hobbies, and Favourites</h1>
       <p data-i18n="interestsIntro">
         A closer look at my hobbies, passions and personal projects.
       </p>
@@ -124,19 +124,222 @@
     </section>
 
     <!-- HOBBIES -->
-    <section id="gaming" class="interest-detail">
-      <h2 data-i18n="hobbyGaming">Gaming</h2>
-      <p data-i18n="gamingDescription">
+    <section id="hobbies" class="interest-detail">
+      <h2 data-i18n="hobbyList">Hobbies</h2>
+      <p data-i18n="hobbyDescription">
         I enjoy Minecraft, city-building simulations, Batman:
         Arkham games, LEGO games and other adventures.
       </p>
     </section>
 
-    <section id="cycling" class="interest-detail">
-      <h2 data-i18n="hobbyCycling">Cycling</h2>
-      <p data-i18n="cyclingDescription">
-        Cycling, exploring and discovering places on two wheels.
+    
+    <!-- FAVOURITES -->
+    <section id="favourites" class="interest-detail favourites-section">
+      <h2 data-i18n="favouritesTitle">Favourites</h2>
+
+      <p data-i18n="favouritesDescription">
+        A collection of my favourite things, places and experiences.
       </p>
+
+      <div class="favourites-grid">
+
+        <!-- COLOURS -->
+      <article class="favourite-card favourite-colours">
+        <h3 data-i18n="favColours">Favourite Colours</h3>
+
+        <div class="favourite-colour-list">
+          <div class="favourite-colour">
+            <span class="colour-swatch navy" aria-hidden="true"></span>
+            <div>
+              <h4 data-i18n="favNavy">Navy Blue</h4>
+              <p data-i18n="favNavyDesc">
+                Navy blue has been my favourite colour since July 2023.
+                It makes me feel connected to some of nature's finest sights:
+                the deep blue waters and the night sky illuminated by
+                countless stars.
+              </p>
+            </div>
+          </div>
+
+          <div class="favourite-colour">
+            <span class="colour-swatch red" aria-hidden="true"></span>
+            <div>
+              <h4 data-i18n="favRed">Red</h4>
+              <p data-i18n="favRedDesc">
+                Originally inspired by the Canadian flag, red has remained
+                one of my favourite colours since December 2013.
+                While red is often associated with negative emotions,
+                I see it as a symbol of warmth, love and honour.
+              </p>
+            </div>
+          </div>
+
+          <div class="favourite-colour">
+            <span class="colour-swatch white" aria-hidden="true"></span>
+            <div>
+              <h4 data-i18n="favWhite">White</h4>
+              <p data-i18n="favWhiteDesc">
+                Originally inspired by snow, white became one of my favourite colours in 2025. This colour symbolises light,
+                fresh beginnings and the promise of a brighter future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+        <!-- ANIMAL --> 
+        <a
+          class="favourite-card favourite-link"
+          href="https://en.wikipedia.org/wiki/Kangaroo"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Kangaroo — Wikipedia (opens in a new tab)"
+        >
+          <img
+            src="Assets/Kangaroo.jpeg"
+            alt="Kangaroo"
+            class="favourite-image favourite-kangaroo"
+            loading="lazy"
+          >
+          <h3 data-i18n="favAnimal">Favourite Animal</h3>
+          <p class="favourite-answer" data-i18n="favKangaroo">
+            Kangaroo
+          </p>
+        </a>
+
+        <!-- MOVIE -->
+        <a
+          class="favourite-card favourite-link"
+          href="https://www.imdb.com/title/tt0120338/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="favourite-symbol favourite-popcorn" aria-hidden="true">🍿</div>
+          <h3 data-i18n="favMovie">Favourite Movie</h3>
+          <p class="favourite-answer">Titanic</p>
+        </a>
+
+        <!-- TV SHOW -->
+        <a
+          class="favourite-card favourite-link"
+          href="https://www.imdb.com/title/tt7587890/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="favourite-symbol favourite-tv" aria-hidden="true">
+            📺
+          </div>
+          <h3 data-i18n="favTV">Favourite TV Show</h3>
+          <p class="favourite-answer">The Rookie</p>
+        </a>
+
+        <!-- FOOD -->
+        <a
+          class="favourite-card favourite-link"
+          href="https://www.canada.ca/en/health-canada/services/food-guide.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="Assets/Food.jpeg"
+            alt="Food"
+            class="favourite-image favourite-food"
+            loading="lazy"
+          >
+          <h3 data-i18n="favFood">Favourite Food</h3>
+          <p class="favourite-answer" data-i18n="favFoodValue">
+            Varies with my mood - always trying something new
+          </p>
+        </a>
+
+        <!-- DESSERT -->
+        <a
+          class="favourite-card favourite-link"
+          href="https://en.wikipedia.org/wiki/Gulab_jamun"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="Assets/Gulab Jamun.png"
+            alt="Glossy gulab jamun in golden syrup, garnished with pistachios and almonds"
+            class="favourite-image favourite-dessert"
+            loading="lazy"
+          >
+          <h3 data-i18n="favDessert">Favourite Dessert</h3>
+          <p class="favourite-answer">Gulab Jamun</p>
+        </a>
+
+        <!-- DRINK -->   
+        <a
+          class="favourite-card favourite-link"
+          href="https://en.wikipedia.org/wiki/Lemonade"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="Assets/Lemonade.jpeg"
+            alt="Lemonade"
+            class="favourite-image favourite-drink"
+            loading="lazy"
+          >
+          <h3 data-i18n="favDrink">Favourite Drink</h3>
+          <p class="favourite-answer" data-i18n="favLemonade">
+            Lemonade
+          </p>
+        </a>
+
+        <!-- PHONE BRAND -->
+        <a
+          class="favourite-card favourite-link"
+          href="https://www.apple.com/ca/store"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="Assets/Apple.jpeg"
+            alt="Apple"
+            class="favourite-image favourite-phone"
+            loading="lazy"
+          >
+          <h3 data-i18n="favPhone">Favourite Phone Brand</h3>
+          <p class="favourite-answer">Apple</p>
+        </a>
+
+        <!-- CAR BRAND -->   
+        <a
+          class="favourite-card favourite-link"
+          href="https://www.nissan.ca/vehicles/cars/2026-sentra.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="Assets/Nissan.jpeg"
+            alt="Nissan"
+            class="favourite-image favourite-car"
+            loading="lazy"
+          >
+          <h3 data-i18n="favCar">Favourite Car Brand</h3>
+          <p class="favourite-answer">Nissan</p>
+        </a>
+
+        <!-- PLACE -->       
+        <a
+          class="favourite-card favourite-link favourite-place"
+          href="https://www.britannica.com/place/Toronto"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="Assets/Toronto.jpeg"
+            alt="Toronto, Ontario"
+            class="favourite-image favourite-toronto"
+            loading="lazy"
+          >
+          <h3 data-i18n="favPlace">Favourite Place to Be</h3>
+          <p class="favourite-answer">Toronto, Ontario</p>
+        </a>
+
+      </div>
     </section>
 
     <section id="music" class="interest-detail music-section">

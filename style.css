@@ -1990,3 +1990,32 @@ a.favourite-link:hover .favourite-answer {
     transition: none;
   }
 }
+
+
+/* Biography links beneath hero buttons */
+.biography-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.biography-links a {
+  color: #142B4D;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.biography-links a:hover {
+  color: #ff6b81;
+  text-decoration: underline;
+}
+
+.biography-links a:focus-visible {
+  outline: 2px solid #142B4D;
+  outline-offset: 4px;
+}
+

@@ -64,14 +64,14 @@ const translations = {
     hobbiesTitle: "My Hobbies & Interests",
     hobbyTechnology: "Technology",
     hobbyHardware: "Computer Hardware",
-    hobbyList: "Hobbies",
+    hobbyList: "My Hobbies",
     hobbyDescription: "My hobbies and interests.",
     hobbyTransportation: "Transportation",
     hobbyArchitecture: "Architecture",
     hobbyUrban: "Urban Design",
     hobbyHistory: "History",
     hobbyGeography: "Geography",
-    favouritesTitle: "Favourites",
+    favouritesTitle: "My Favourites",
     favouritesDescription: "A look at my favourite colours, foods, movies, animals, and more.",
     hobbyMusic: "Music",
     musicIntroduction: "Music deeply inspires me to keep pushing forwards. I believe that music is an important form of self-expression, and I use it to communicate my feelings, even as they evolve over the years. Here is a collection of songs you can find on my playlists:",
@@ -98,7 +98,7 @@ const translations = {
     "geography": "<p>We are privileged to live on such a beautiful planet. From the highest mountains to the deepest oceans and the seemingly endless skies, Earth is filled with extraordinary landscapes and natural wonders. Learning about our planet and exploring everything it has to offer never ceases to excite me.</p><p>One of my favourite activities is studying maps and cartography. These remarkable little representations can bring the entire world into the palms of our hands, helping us understand places, discover connections and make exploring even more enjoyable.</p><p>I also have a great passion for travelling and discovering new places. I warmly encourage you to explore the <strong>Travel</strong> section of my website to learn more about my journeys and experiences.</p>",
   
         
-    favouritesTitle: "Favourites",
+    favouritesTitle: "My Favourites",
     favouritesDescription: "A collection of my favourite things, places and experiences.",
 
     favColours: "Favourite Colours",
@@ -134,6 +134,65 @@ const translations = {
     favWhiteDesc: "Originally inspired by snow, white became one of my favourite colours in 2025. This colour symbolises light, fresh beginnings and the promise of a brighter future.",
 
     favFoodDesc: "My favourite foods vary depending on the occasion.",
+
+    hobbyCycling: "Cycling",
+    hobbyCyclingImageAlt: "Cycling in Kingston",
+
+    
+    cycling: `
+      <p>One of my favourite activities is cycling, especially around Kingston. Cycling is a healthy and environmentally sustainable way to commute, and I am always looking for an opportunity to get out on my bicycle. I own a mountain bike, affectionately given the vessel-style name <strong>The Scarborough</strong>.</p>
+
+      <p>My favourite cycling route begins at the intersection of Princess and Division Streets. From there, I travel south along Division Street, west along Brock Street, south along Palace Road, and west along Johnson Street. I then head south through Queen's University's West Campus, east along Union Street, and north along either Division Street or University Avenue to return to Princess Street.</p>
+
+      <p>I am always eager to explore new routes. In 2027, I am planning a long-distance ride from Kingston to Belleville, Ontario!</p>
+
+      <p><strong>Fun fact:</strong> I learned how to ride a bicycle at the age of 22! In fact, I had already driven on <a href="https://en.wikipedia.org/wiki/Ontario_Highway_401" target="_blank" rel="noopener noreferrer">Ontario Highway 401</a> before learning how to ride a bike.</p>
+    `,
+
+    hobbyPhotography: "Photography",
+    hobbyPhotographyImageAlt: "Photography illustration",
+
+    photography: `
+      <p>Photography is one of my favourite ways to preserve the beauty of the world. Through my lens, I enjoy capturing the places, moments and details that make our planet extraordinary.</p>
+      <p>Here are some of my photographs:</p>
+    `,
+
+    hobbyGaming: "Gaming",
+    hobbyGamingImageAlt: "Xbox gaming controller",
+
+    
+    gaming: `
+      <p>I enjoy playing video games, and gaming played a key role in my childhood. I have played on a Nintendo DSi, Xbox 360, Nintendo Switch (both generations), and Xbox Series X. I also have experience with desktop and mobile gaming.</p>
+
+      <p><strong>Games I enjoy playing include:</strong></p>
+
+      <ul>
+        <li>Minecraft</li>
+        <li>Cities: Skylines</li>
+        <li>SimCity</li>
+        <li>Batman: Arkham Asylum</li>
+        <li>Batman: Arkham City</li>
+        <li>Batman: Arkham Origins</li>
+        <li>Batman: Arkham Knight</li>
+        <li>LEGO Batman</li>
+        <li>LEGO Star Wars: The Complete Saga</li>
+        <li>The LEGO Movie Videogame</li>
+        <li>Destroy All Humans!</li>
+        <li>Asphalt 8</li>
+        <li>Asphalt 9</li>
+        <li>Grand Theft Auto IV</li>
+        <li>Grand Theft Auto V</li>
+        <li>Red Dead Redemption 2</li>
+        <li>Hollow Knight: Silksong</li>
+      </ul>
+
+      <p><strong>Fun fact:</strong> Since 2020, I have been building a Minecraft metropolis named <strong>Steveshire</strong>. I first began building cities in 2016, but Steveshire is my current and most ambitious project. Some of my earlier cities have even been copied and integrated into Steveshire.</p>
+    `,
+
+    jumpInterests: "My Interests",
+    jumpHobbies: "My Hobbies",
+    jumpFavourites: "My Favourites",
+
   },
   fr: {
     navAbout:'À propos',navWork:'Portfolio',navContact:'Coordonnées',welcome:'BIENVENUE · WELCOME',
@@ -201,7 +260,7 @@ const translations = {
     hobbyDescription: "Mes loisirs et centres d'intérêt.",
     hobbyTechnology: "Technologie",
     hobbyHardware: "Matériel informatique",
-    hobbyList: "Loisirs",
+    hobbyList: "Mes Loisirs",
     hobbyTransportation: "Transport",
     hobbyArchitecture: "Architecture",
     hobbyUrban: "Urbanisme",
@@ -269,6 +328,63 @@ const translations = {
     favWhiteDesc: "Inspiré à l’origine par la neige, le blanc est devenu l’une de mes couleurs préférées en 2025. Cette couleur symbolise la lumière, les nouveaux départs et la promesse d’un avenir plus lumineux.",
 
     favFoodDesc: "Mes préférences alimentaires varient selon l'occasion.",
+
+    hobbyCycling: "Cyclisme",
+    hobbyCyclingImageAlt: "Cyclisme à Kingston",
+
+    cycling: `
+      <p>Une de mes activités préférées est le cyclisme, surtout à Kingston. Le vélo est un moyen de transport sain et respectueux de l’environnement, et je saisis toujours l’occasion de sortir mon vélo. Je possède un VTT que j’ai affectueusement nommé <strong>The Scarborough</strong>.</p>
+
+      <p>Mon itinéraire cyclable préféré commence à l’intersection des rues Princess et Division. De là, je me dirige vers le sud sur Division Street, puis vers l’ouest sur Brock Street, ensuite vers le sud sur Palace Road et enfin vers l’ouest sur Johnson Street. Je continue ensuite vers le sud à travers le campus ouest de Queen’s University, puis vers l’est sur Union Street et enfin vers le nord sur Division Street ou University Avenue pour revenir à Princess Street.</p>
+
+      <p>Je suis toujours impatient d’explorer de nouveaux itinéraires. En 2027, je prévois un long trajet à vélo de Kingston à Belleville, en Ontario !</p>
+
+      <p><strong>Fait amusant :</strong> J’ai appris à faire du vélo à l’âge de 22 ans ! En fait, j’avais déjà conduit sur <a href="https://fr.wikipedia.org/wiki/Autoroute_401_(Ontario)" target="_blank" rel="noopener noreferrer">l’autoroute 401 de l’Ontario</a> avant d’apprendre à faire du vélo.</p>
+    `,
+
+    hobbyPhotography: "Photographie",
+    hobbyPhotographyImageAlt: "Illustration de la photographie",
+
+    
+    photography: `
+      <p>La photographie est l'une de mes façons préférées de préserver la beauté du monde. À travers mon objectif, j'aime immortaliser les lieux, les moments et les détails qui rendent notre planète extraordinaire.</p>
+      <p>Voici quelques-unes de mes photographies :</p>
+    `,
+
+    hobbyGaming: "Jeux vidéo",
+    hobbyGamingImageAlt: "Manette de jeu Xbox",
+    
+    gaming: `
+      <p>J'aime jouer aux jeux vidéo, qui ont occupé une place importante dans mon enfance. J'ai joué sur Nintendo DSi, Xbox 360, Nintendo Switch (les deux générations) et Xbox Series X. J'ai également de l'expérience avec les jeux sur ordinateur et sur appareil mobile.</p>
+
+      <p><strong>Parmi les jeux auxquels j'aime jouer, on retrouve :</strong></p>
+
+      <ul>
+        <li>Minecraft</li>
+        <li>Cities: Skylines</li>
+        <li>SimCity</li>
+        <li>Batman: Arkham Asylum</li>
+        <li>Batman: Arkham City</li>
+        <li>Batman: Arkham Origins</li>
+        <li>Batman: Arkham Knight</li>
+        <li>LEGO Batman</li>
+        <li>LEGO Star Wars: The Complete Saga</li>
+        <li>The LEGO Movie Videogame</li>
+        <li>Destroy All Humans!</li>
+        <li>Asphalt 8</li>
+        <li>Asphalt 9</li>
+        <li>Grand Theft Auto IV</li>
+        <li>Grand Theft Auto V</li>
+        <li>Red Dead Redemption 2</li>
+        <li>Hollow Knight: Silksong</li>
+      </ul>
+
+      <p><strong>Le saviez-vous?</strong> Depuis 2020, je construis une métropole dans Minecraft appelée <strong>Steveshire</strong>. J'ai commencé à construire des villes en 2016, mais Steveshire est mon projet actuel et le plus ambitieux. Certaines de mes anciennes villes ont même été copiées et intégrées à Steveshire.</p>
+    `,
+
+    jumpInterests: "Mes centres d’intérêt",
+    jumpHobbies: "Mes loisirs",
+    jumpFavourites: "Mes préférences",
   }
 };
 
@@ -333,6 +449,13 @@ function setLanguage(lang, remember = false) {
     : "Ashfi | Personal Portfolio";
 
   if (remember) saveLanguage(lang);
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((img) => {
+  const key = img.dataset.i18nAlt;
+  if (translations[lang]?.[key]) {
+    img.alt = translations[lang][key];
+  }
+});
 }
 
 /* ==========================================

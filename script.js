@@ -193,6 +193,11 @@ const translations = {
     jumpHobbies: "My Hobbies",
     jumpFavourites: "My Favourites",
 
+    navHobbies: "Hobbies and Interests",
+    timetitle: "CURRENT TIME",
+
+    interestsIntro: "A closer look at my hobbies, passions and personal projects.",
+    travelHeading: "Travel",
   },
   fr: {
     navAbout:'À propos',navWork:'Portfolio',navContact:'Coordonnées',welcome:'BIENVENUE · WELCOME',
@@ -385,6 +390,12 @@ const translations = {
     jumpInterests: "Mes centres d’intérêt",
     jumpHobbies: "Mes loisirs",
     jumpFavourites: "Mes préférences",
+
+    navHobbies: "Loisirs et centres d’intérêt",
+    timetitle: "HEURE ACTUELLE",
+
+    interestsIntro: "Découvrez mes loisirs, mes passions et mes projets personnels.",
+    travelHeading: "Voyages",
   }
 };
 

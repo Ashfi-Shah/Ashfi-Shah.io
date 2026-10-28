@@ -483,6 +483,7 @@ function updateClock() {
     ["clockThunderBay", "America/Toronto"],
     ["clockToronto", "America/Toronto"],
     ["clockKingston", "America/Toronto"],
+    ["clockNewYork", "America/New_York"],
     ["clockGMT", "UTC"],
     ["clockLondon", "Europe/London"],
     ["clockParis", "Europe/Paris"],

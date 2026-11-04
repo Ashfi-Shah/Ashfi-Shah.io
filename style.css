@@ -2184,3 +2184,45 @@ html {
 .navy-top > .container {
   padding-bottom: 40px;
 }
+
+
+/* World clock section finishing touches */
+
+/* Centre the heading above the clocks */
+.navy-top > .container > .eyebrow {
+  max-width: 1100px;
+  margin: 0 auto 16px;
+  text-align: center;
+}
+
+/* Add breathing room beneath the clocks */
+.navy-top > .container {
+  padding-bottom: 45px;
+}
+
+
+/* World clocks section */
+
+.clocks-section {
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+
+/* World clocks section finishing touches */
+
+.clocks-section {
+  padding: 30px 20px 50px;
+}
+
+/* Align CURRENT TIME with the clock grid */
+
+.clocks-section .clocks-heading {
+  display: block;
+  width: min(1100px, calc(100% - 40px));
+  max-width: none;
+  margin: 0 auto 16px;
+  padding: 0;
+  text-align: left;
+}
+

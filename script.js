@@ -478,7 +478,8 @@ function updateClock() {
   const clocks = [
     ["clockVancouver", "Etc/GMT+7"],
     ["clockSeattle", "America/Los_Angeles"],
-    ["clockLosAngeles", "America/Los_Angeles"],
+    ["clockHalifax", "America/Halifax"],
+    ["clockPersonal", "America/Halifax"],
     ["clockWinnipeg", "America/Winnipeg"],
     ["clockThunderBay", "America/Toronto"],
     ["clockToronto", "America/Toronto"],

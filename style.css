@@ -2175,3 +2175,12 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+.navy-top > .container > .eyebrow {
+  max-width: 1100px;
+  margin: 0 auto 16px;
+}
+
+.navy-top > .container {
+  padding-bottom: 40px;
+}

@@ -2226,3 +2226,15 @@ html {
   text-align: left;
 }
 
+/* Force CURRENT TIME heading to the centre */
+.clocks-section > .clocks-heading {
+  position: relative;
+  left: auto;
+  right: auto;
+  float: none;
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0 0 20px;
+  text-align: center !important;
+}
